@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="{{ .Page.Lang }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; base-uri 'self'; block-all-mixed-content; font-src 'self'; frame-src *.youtube.com *.youtube-nocookie.com; img-src 'self' data: www.google-analytics.com *.googleapis.com *.youtube.com; script-src 'self' www.google-analytics.com www.googletagmanager.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; connect-src 'self' www.google-analytics.com *.googleapis.com; manifest-src 'self'"
+    />
+    <link href="/css/main.css" rel="stylesheet" type="text/css" />
+
+    <title>{{ .Site.Title }} - {{ .Page.Title }}</title>
+    <meta name="author" content="Carlos Coloma" />
+    <meta name="description" content="{{ i18n "Summary" }}">
+
+    {{/* Social: Twitter */}}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@commitconf" />
+    <meta name="twitter:description" content="{{ i18n "Summary" }}">
+
+    {{/* Social: Facebook, Open Graph */}}
+    <meta property="og:title" content="{{ .Site.Title }} - {{ .Page.Title }}" />
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://commit-conf.com" />
+    <meta
+      property="og:image"
+      content="https://2020.commit-conf.com/android-chrome-512x512.png"
+    />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:description" content="{{ i18n "Summary" }}">
+
+    {{/* Favicon assets built with realfavicongenerator.net */}}
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    {{ partial "header.html" . }}
+    <main role="main">{{ block "main" . }}{{ end }}</main>
+    {{ partial "footer.html" . }}
+
+    <div class="cookie-container hidden">
+      <section>
+        <div class="content main-and-aside cookie-advice">
+          <div class="main">
+            <p class="cookie-description">
+              {{ i18n "CookieAdvice" | safeHTML }}
+            </p>
+          </div>
+          <a class="button primary small cookie-btn">{{i18n "Accept"}}</a>
+        </div>
+      </section>
+    </div>
+    <div class="bg-theme" aria-hidden="true">
+      {{ range (slice 1 2 3) }}
+      <div class="bg-circle"><div class="bg-circle dotted"></div></div>
+      <div class="bg-circle"></div>
+      <div class="bg-circle"></div>
+      <div class="bg-circle"><div class="bg-circle"></div></div>
+      <div class="bg-circle"></div>
+      <div class="bg-circle"><div class="bg-circle"></div></div>
+      <div class="bg-circle"></div>
+      <div class="bg-circle"><div class="bg-circle"></div></div>
+      <div class="bg-circle"></div>
+      <div class="bg-circle"></div>
+      <div class="bg-circle dotted"><div class="bg-circle"></div></div>
+      <div class="bg-circle"></div>
+      {{ end }}
+    </div>
+    <script src="/js/common.js"></script>
+
+    {{ block "js" . }}{{ end }}
+  </body>
+</html>

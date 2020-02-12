@@ -1,0 +1,44 @@
+{{ define "main" }}
+
+<section class="content">
+  <h1 class="lead">{{i18n "PrivacyPolicy"}}</h1>
+  <p>
+    {{i18n "PrivacyPolicyDesc"}}
+  </p>
+
+  <h2>{{i18n "InfoWeCollect"}}</h2>
+  <p>{{i18n "InfoWeCollectDesc"}}:</p>
+  <ul class="square">
+    <li>
+      {{ i18n "CookiesUse" | safeHTML }}
+    </li>
+  </ul>
+
+  <h2>{{i18n "SharingWithThirdParties"}}</h2>
+  <p>
+    {{i18n "SharingWithThirdPartiesDesc" | safeHTML}}:
+  </p>
+  <ul class="square">
+    <li>
+      {{i18n "SharingWithThirdPartiesLegalReasons" | safeHTML}}:
+      <ul class="square">
+        <li>{{i18n "SharingWithThirdPartiesLegalProcess"}}</li>
+        <li>{{i18n "SharingWithThirdPartiesEnforceTerms"}}</li>
+        <li>{{i18n "SharingWithThirdPartiesProtection"}}
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>{{i18n "Security"}}</h2>
+  <p>
+    {{i18n "SecurityDesc"}}
+  </p>
+
+  <h2>{{i18n "PrivacyPolicyChanges"}}</h2>
+  <p>
+    {{i18n "PrivacyPolicyChangesDesc"}}
+  </p>
+</section>
+
+{{ end }}

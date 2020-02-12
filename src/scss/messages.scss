@@ -1,0 +1,13 @@
+.message {
+  padding: .5rem 1rem;
+  background-color: rgba($color-yellow-500, .3);
+  border-radius: 3px;
+  border: 1px solid $color-yellow-600;
+  > a {
+    color: $color-blue-800;
+    &:hover, &:focus {
+      background-color: $color-blue-100;
+      color: $color-blue-900;
+    }
+  }
+}

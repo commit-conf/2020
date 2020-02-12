@@ -1,0 +1,16 @@
+<section class="content">
+  <h1>{{i18n "KnowledgeIsPower"}}</h1>
+  <div class="knowledge-content">
+    <picture class="blurred bacon">
+      <source type="image/webp" srcset="/img/bacon.webp">
+      <source type="image/jpeg" srcset="/img/bacon.jpg">
+      <img src="/img/bacon.jpg" title="Bacon photo by Antonio Barroro on Unsplash" alt="{{i18n "LongLiveBacon"}}">
+    </picture>
+    <div>
+      <p>{{i18n "HelpDesc"}}</p>
+      <a href="{{"/location" | relLangURL}}" class="button primary">{{i18n "GoToLocationHelp"}}</a>
+      <a href="{{"/tickets" | relLangURL}}" class="button">{{i18n "GoToTicketsHelp"}}</a>
+      <p><small>{{i18n "BaconExplanation" | safeHTML }}</small></p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,12 @@
+<section class="content">
+  <h1>{{i18n "OurCommunities"}}</h1>
+  <p>{{i18n "OurCommunitiesDesc"}}</p>
+  <div class="communities">
+    {{ range $.Site.Data.communities }}
+      {{ $normalizedName := .name | replaceRE "[^a-zA-Z0-9]+" "-" }}
+      {{ $logo := cond (isset . "logo") (cond (isset .logo "file") .logo.file (printf "%s.%s" $normalizedName .logo.type)) (printf "%s.png" $normalizedName) }}
+      <a href="{{.href | safeURL }}" target="_blank" class="community {{$normalizedName}}" title="{{.name}}" rel="noopener noreferrer" style='background-image: url("/img/communities/{{$logo}}");'>{{.name}}</a>
+    {{ end }}
+  </div>
+  <div><small>{{i18n "AddYourComunity" | safeHTML}}</small></div>
+</section>

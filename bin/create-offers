@@ -1,0 +1,39 @@
+#!/usr/bin/env node
+
+const fs = require("fs");
+const jsyaml = require("js-yaml");
+
+function getOfferHeader({ sponsor, title }) {
+  return `---\ntitle: "${sponsor} - ${title}"\ndate: ${new Date().toISOString()}\nlayout: offer\n---\n\n# ${title}`;
+}
+
+try {
+  const offers = jsyaml.safeLoad(fs.readFileSync("data/offers.yaml", "utf8"));
+  if (offers) {
+    offers.forEach(({ template, sponsor, title, i18n }) => {
+      const contentDirectory = `content/offers/${template.replace(".md", "")}`;
+      const spanishOfferFile = `${contentDirectory}/_index.md`;
+      const englishOfferFile = `${contentDirectory}/_index.en.md`;
+      const offerHeader = getOfferHeader({ sponsor, title });
+      if (!fs.existsSync(spanishOfferFile)) {
+        fs.mkdirSync(contentDirectory, { recursive: true });
+      }
+      let offerContent = fs.readFileSync(`src/offers/${template}`);
+      fs.writeFileSync(
+        spanishOfferFile,
+        `${offerHeader}\n\n${offerContent}`,
+        "utf8"
+      );
+      offerContent = fs.readFileSync(
+        `src/offers/${i18n ? template.replace(".md", ".en.md") : template}`
+      );
+      fs.writeFileSync(
+        englishOfferFile,
+        `${offerHeader}\n\n${offerContent}`,
+        "utf8"
+      );
+    });
+  }
+} catch (e) {
+  console.error(e);
+}

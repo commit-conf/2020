@@ -1,0 +1,210 @@
+// Set box-sizing globally to handle padding and border widths
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+// Default body styles
+body {
+  background: #fff;
+  color: #222;
+  font-family: $sansFontFamily;
+  line-height: 1.5;
+  font-size: $baseFontSize;
+  margin: 0;
+  padding: 0;
+  font-display: swap;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+  color: $linkColor;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: $linkColorHover;
+  }
+
+  & > img {
+    border: none;
+  }
+}
+
+p {
+  margin-bottom: $paragraph-margin-bottom;
+  @media #{$medium-up} {
+    text-align: justify;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $title-color;
+  line-height: 1.2;
+  margin-bottom: .4em;
+  margin-top: 0.2em;
+  //  text-rendering: optimizeLegibility;
+
+  & > a {
+    color: inherit;
+  }
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $lightFontFamily;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: $heavyFontFamily;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 40px;
+//  color: #4a4a4a;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 25px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 14px;
+}
+
+hr {
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  height: 1px;
+  margin: $hr-margin 0;
+}
+
+// small font, will use gray color
+small,
+.small {
+  font-size: 80%;
+  line-height: inherit;
+  color: $color-gray-600;
+}
+
+// Lists
+ul,
+ol,
+dl {
+  list-style-position: outside;
+  margin-bottom: $paragraph-margin-bottom;
+}
+
+$list-side-margin: 2rem;
+ul {
+  list-style-type: none;
+
+  &.square {
+    list-style-type: square;
+    margin-left: $list-side-margin;
+  }
+}
+
+/* Ordered Lists */
+ol {
+  margin-left: $list-side-margin;
+}
+
+/* Definition Lists */
+dl {
+  dt {
+    font-weight: bold;
+  }
+}
+
+// container with max-width 980px
+.content {
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.highlight {
+  font-size: 23px;
+  color: $title-color;
+}
+
+pre {
+  border: 1px solid $color-border;
+  padding: 1rem;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.main-and-aside > aside {
+  margin-bottom: $section-vertical-margin;
+}
+
+// no leading image in the page (e.g. cookies.html)
+h1.lead {
+  margin-top: 2rem;
+}
+
+quote {
+  border-radius: 3px;
+  border: 1px solid $color-blue-800;
+  border-left-width: 5px;
+  display: block;
+  padding: 1rem;
+  background-color: rgba($color-blue-200, .3);
+}
+
+.quote-source {
+  margin-bottom: 0;
+  text-align: right;
+  font-size: 80%;
+}
+
+section.content {
+  padding-top: 4rem;
+}

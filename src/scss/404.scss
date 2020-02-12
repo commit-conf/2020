@@ -1,0 +1,9 @@
+.not-found {
+  margin-top: 1rem;
+  @media #{$medium-up} {
+    max-width: 70%;
+  }
+  @media #{$large-up} {
+    max-width: 50%;
+  }
+}

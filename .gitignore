@@ -1,0 +1,4 @@
+node_modules
+public
+.gh-pages
+*.orig

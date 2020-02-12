@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="content">
+  <h1 class="lead">Call for volunteers</h1>
+  {{ range $.Site.Data.c4v }}
+    {{ partial "print.html" .content}}
+  {{ end }}
+  <br/>
+  {{ if $.Site.Params.C4VLink }}
+    <a href="{{$.Site.Params.C4VLink}}" target="_blank" class="button primary" title="{{ i18n "C4VSignUp" }}">{{ i18n "C4VSignUp" }}</a>
+  {{ else }}
+    <p class="message">{{i18n "CallForVolunteersWillOpenSoon"}}</p>
+  {{ end }}
+</section>
+
+{{ end }}

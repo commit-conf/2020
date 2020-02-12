@@ -1,0 +1,45 @@
+.info {
+  > section {
+    margin-top: 1rem;
+    padding: 2rem 0 1rem;
+  }
+  &.zebra > section:nth-child(2n +1) {
+    background-color: rgba($color-gray-300, .4);
+  }
+}
+
+.info-subtitle {
+  margin-top: 2rem;
+}
+
+.transport-details {
+  margin-bottom: 1rem;
+  @media #{$medium-up} {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.transport-item {
+  display: flex;
+  align-items: center;
+  padding: .5rem 0;
+  margin-right: 1.5rem;
+}
+
+.transport-separator {
+  margin: 0 0.5rem;
+}
+
+.transport {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.metro, .bus {
+  margin-right: 1rem;
+  fill: $black;
+  width: 2rem;
+  height: 2rem;
+}

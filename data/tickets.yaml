@@ -1,0 +1,34 @@
+- title: TicketInvoice
+  items:
+    - content: TicketInvoiceCreation
+    - content: TicketInvoiceLimit
+- title: TransferOrModifyTicketData
+  items:
+    - content: ModifyTicketData
+    - content: TransferTicket
+- title: Refund
+  items:
+    - content: RefundDesc
+- title: CannotFindTicket
+  items:
+    - content: CannotFindTicketDesc
+- title: StudentOrUnemployedRequirements
+  items:
+    - content: StudentOrUnemployedIntro
+    - content: WillNeedToShow
+    - content:
+        - StudentRequirements
+        - UnemployedRequirements
+    - content: LimitedTickets
+    - content: TransferRequirements
+- title: BuyTicketAtTheVenue
+  items:
+    - content: BuyTicketAtTheVenueDesc
+- title: WorkshopsRequireRegistration
+  items:
+    - content: TicketsAllowsToAttendAnyTalk
+    - content: HelpUsWithTalkLikes
+- title: IsMealIncluded
+  items:
+    - content: MealIsIncluded
+    - content: MealAlternative

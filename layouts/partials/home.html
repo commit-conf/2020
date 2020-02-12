@@ -1,0 +1,107 @@
+<div itemscope itemtype="http://schema.org/Event">
+  <meta itemprop="url" content="https://www.koliseo.com/events/commit-2020">
+  <meta itemprop="image" content="{{ "/img/background.jpg" | absURL }}">
+  <div class="content" itemprop="location" itemscope itemtype="http://schema.org/Place">
+    <meta itemprop="name" content="Universidad San Pablo CEU">
+    <meta itemprop="address" content="Universidad San Pablo CEU, Campus de Montepríncipe. Boadilla del monte, Madrid">
+    <meta itemprop="url" content="https://goo.gl/maps/X5eoF">
+  </div>
+  <div class="hero content">
+    <div class="hero-text">
+      <h1 class="hero-title" itemprop="name">
+        Commit <span class="hero-highlight">Conf</span>
+      </h1>
+      <meta itemprop="startDate" content="2020-11-27T08:00">
+      <meta itemprop="endDate" content="2020-11-28T18:30">
+      <p class="hero-body">Madrid, 27-28 Nov</p>
+      <div class="hero-actions">
+        {{ $ticketsButtonClass := "primary" }}
+        {{ if (or $.Site.Params.AgendaLink $.Site.Params.C4PLink) }}
+          {{ $ticketsButtonClass = "" }}
+          {{ if $.Site.Params.AgendaLink }}
+            <a class="button small primary" href="{{$.Site.Params.AgendaLink}}" target="_blank">
+              Agenda
+              <span class="button-small">{{ i18n "VisitOurAgenda" }}</span>
+            </a>
+          {{ else }}
+            <a class="button small primary" href="{{$.Site.Params.C4PLink}}" target="_blank">
+              Call for papers
+              <span class="button-small">{{ i18n "SendYourTalk" }}</span>
+            </a>
+          {{ end }}
+        {{ end }}
+        {{ if (or $.Site.Params.VideoLink $.Site.Params.PhotosLink) }}
+          {{ if $.Site.Params.VideoLink }}
+          <a class="button small" href="{{$.Site.Params.VideoLink}}" target="_blank">
+            {{ i18n "SummaryVideo" }}
+            <span class="button-small">{{ i18n "ViewSummaryVideo" }}</span>
+          </a>
+          {{ end }}
+          {{ if $.Site.Params.PhotosLink }}
+          <a class="button small" href="{{$.Site.Params.PhotosLink}}" target="_blank">
+            {{ i18n "ThePhotos" }}
+            <span class="button-small">{{ i18n "ViewEventPhotos" }}</span>
+          </a>
+          {{ end }}
+        {{ else }}
+          <a class="button small {{$ticketsButtonClass}}" href="https://www.koliseo.com/events/commit-2020" target="_blank">
+            {{ i18n "Tickets" }}
+            <span class="button-small">{{ i18n "TicketsStartDate" }}</span>
+          </a>
+        {{ end }}
+        {{ if $.Site.Params.C4VLink }}
+        <a class="button small" href="/call-for-volunteers" target="_blank">
+          Call for volunteers
+          <span class="button-small">{{ i18n "BeAVolunteer" }}</span>
+        </a>
+        {{ end }}
+        {{ if $.Site.Params.StreamingLink }}
+        <a class="button small" href="{{$.Site.Params.StreamingLink}}" target="_blank">
+          {{ i18n "Streaming" }}
+          <span class="button-small">{{ i18n "GoToTheYoutubeChannel" }}</span>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+    <div class="hero-image"></div>
+  </div>
+  <div class="stats">
+    {{ range $.Site.Data.stats }}
+      <div class="stat">
+        <span class="stat-number">{{ .number }}</span>
+        <span class="stat-text">{{ i18n .name | lower }}</span>
+      </div>
+    {{ end }}
+  </div>
+  <div class="home-highlight">
+    <section class="content">
+      <h1>{{i18n "BeHere"}}</h1>
+      <div class="home-content">
+        <div>
+          <p class="highlight">
+            {{ i18n "BeHereShortDesc" }}
+          </p>
+          <p>{{ i18n "BeHereDesc" | safeHTML }}</p>
+          <p itemprop="description">{{ i18n "LongSummary" }}</p>
+          {{ if $.Site.Params.AnnouncementKey }}
+            <p class="message">{{i18n $.Site.Params.AnnouncementKey }}</p>
+          {{ end }}
+        </div>
+        <div class="youtube-player-container text-center">
+          <iframe title="{{i18n "PreviousEditionSummary"}}" class="youtube-player" width="560" height="315" src="https://www.youtube-nocookie.com/embed/-ACLrI0a1ok" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  {{ partial "sponsors-small.html" . }}
+
+  {{ partial "info.html" . }}
+
+  {{ partial "diversity.html" . }}
+  
+  {{ partial "communities.html" . }}
+
+  {{ partial "newsletter.html" . }}
+
+</div>

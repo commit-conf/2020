@@ -1,0 +1,59 @@
+.offer > ul {
+  @extend ul.square;
+}
+
+.offers {
+  @media #{$large-up} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+.offer-item {
+  display: flex;
+  border: 1px solid $color-border;
+  border-radius: 3px;
+  padding: 1rem;
+  align-items: center;
+}
+
+.offer-item-sponsor {
+  @extend .sponsor-img;
+  width: 120px;
+  padding-right: 1rem;
+}
+
+.offer-item-content {
+  border-left: 1px solid $color-border;
+  padding-left: 1rem;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.offer-item-title, .salary {
+  font-size: 1.25rem;
+}
+
+.offer-item-header, .offer-item-details {
+  @media #{$medium-up} {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.salary {
+  color: $color-green-700;
+}
+
+.location, .tags {
+  display: inline;
+  padding-right: .5rem;
+}
+
+.tags {
+  color: $color-blue-600;
+  display: block;
+}

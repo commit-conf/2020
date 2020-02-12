@@ -1,0 +1,10 @@
+{{ $type := (printf "%T" .) }}
+{{ if (eq "string" $type) }}
+  <p>{{ i18n . | safeHTML }}</p>
+{{ else }}
+  <ul class="square">
+    {{ range . }}
+      <li>{{ partial "print.html" . }}</li>
+    {{ end }}
+  </ul>
+{{ end }}

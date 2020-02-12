@@ -1,0 +1,26 @@
+.communities {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.community {
+  display: inline-block !important;
+  overflow: hidden;
+  text-indent: -100000px;
+  white-space: nowrap;
+  opacity: 0.6;
+  margin: 0 1rem 0.5rem 0;
+  width: 120px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: opacity 0.3s ease-out;
+  filter: grayscale(100%);
+  &:hover,
+  &:focus,
+  &:active {
+    filter: none;
+    opacity: 1;
+  }
+}

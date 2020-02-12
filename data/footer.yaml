@@ -1,0 +1,36 @@
+- name: Contact
+  items:
+    - name: E-mail
+      href: mailto:info@commit-conf.com
+      absolute: true
+      i18n: false
+    - name: Twitter
+      href: https://www.twitter.com/commitconf
+      i18n: false
+    - name: YouTube
+      href: https://www.youtube.com/channel/UCd_1KHg4t2VKGsSDF8OD5Cw
+      i18n: false
+- name: Links
+  items:
+    - name: Tickets
+      href: /tickets
+    - name: Location
+      href: /location
+    - name: Sponsors
+      href: /sponsors
+    - name: Blog
+      href: https://blog.commit-conf.com
+      i18n: false
+    - name: 2019
+      href: https://2019.commit-conf.com
+      i18n: false
+- name: AboutUs
+  items:
+    - name: PrivacyPolicy
+      href: /cookies
+    - name: CodeOfConduct
+      href: /code-of-conduct
+    - name: TermsAndConditions
+      href: /terms-and-conditions
+    - name: TheTeam
+      href: /team

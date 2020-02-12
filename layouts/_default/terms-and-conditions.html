@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<section class="content">
+  <h1 class="lead">{{ i18n "OrganizerID"}}</h1>
+  <p>{{i18n "DataOwner" | safeHTML}}</p>
+  <h1 class="lead">{{i18n "TermsAndConditions"}}</h1>
+  {{ range $.Site.Data.terms }}
+    {{ partial "print.html" .content }}
+  {{ end }}
+  </p>
+</section>
+
+{{ end }}

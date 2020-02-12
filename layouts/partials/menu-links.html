@@ -1,0 +1,13 @@
+{{ if $.Site.Params.AgendaLink }}
+<li><a class="topbar-link" href="{{ $.Site.Params.AgendaLink }}" role="menuitem" tabindex="0">Agenda</a></li>
+{{ end }}
+{{ range $index, $element := $.Site.Data.menu }}
+<li><a class="topbar-link" href="{{$element.url | safeURL | relLangURL }}" role="menuitem" tabindex="0">{{i18n $element.name}}</a></li>
+{{ end }}
+<li>
+  {{ if eq $.Site.Language.Lang "en" }}
+    <a class="topbar-link" href="{{ strings.TrimPrefix "/en" $.RelPermalink }}" role="menuitem" tabindex="0">Español</a>
+  {{ else }}
+    <a class="topbar-link" href="/en{{ $.RelPermalink }}" role="menuitem" tabindex="0">English</a>
+  {{ end }}
+</li>

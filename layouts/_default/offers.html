@@ -1,0 +1,46 @@
+{{ define "main" }}
+<section class="content">
+  <h1>{{i18n "JobOffers"}}</h1>
+  {{ if $.Site.Data.offers}}
+    {{ $sponsorsLogos := dict }}
+    {{ range $.Site.Data.sponsors }}
+      {{ range .items }}
+        {{ $normalizedName := .name | replaceRE "[^a-zA-Z0-9]+" "-" | lower }}
+        {{ $logo := cond (isset . "logo") (cond (isset .logo "file") .logo.file (printf "%s.%s" $normalizedName .logo.type)) (printf "%s.svg" $normalizedName) }}
+        {{ $sponsorsLogos = merge $sponsorsLogos (dict .name $logo) }}
+      {{ end }}
+    {{ end }}
+    <ul class="offers">
+      {{ range $.Site.Data.offers }}
+        <li class="offer-item">
+          <div class="offer-item-sponsor">
+            <img src="/img/sponsors/{{index $sponsorsLogos .sponsor}}" alt="{{.sponsor}}">
+          </div>
+          <div class="offer-item-content">
+            <div class="offer-item-header">
+              <h2 class="offer-item-title">{{.title}}</h2>
+              <div class="salary">{{.salary}}</div>
+            </div>
+            <div class="offer-item-details">
+              <div>
+                <span class="location">{{.location}}</span>
+                <span class="tags">
+                  {{ range .tags }}
+                  <span>#{{.}}</span>
+                  {{ end }}
+                </span>
+              </div>
+              <a class="offer-link">{{i18n "ViewJobOffer"}}</a>
+            </div>
+          </div>
+        </li>
+      {{ end }}
+    </ul>
+  {{ else }}
+    <p class="highlight">{{i18n "EmptyJobOffers" | safeHTML }}</p>
+    <p class="text-center">
+      <img src="/img/404.jpg" class="not-found">
+    </p>
+  {{ end }}
+</section>
+{{ end }}

@@ -1,0 +1,10 @@
+- content: TermsAndConditionsPrefix
+- content:
+  - PurchaseThroughKoliseo
+  - InvoiceInfo
+  - WillNotEmitRefund
+  - StudentTicketRequirement
+  - ChangeTicketDataOrRequestTransfer
+  - TransferedTicketsResponsability
+  - WristbandRequirement
+- content: TermsAndConditionsSuffix

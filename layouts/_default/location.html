@@ -1,0 +1,26 @@
+{{ define "main" }}
+  <section class="info zebra">
+    <div class="content">
+      <h1 class="lead">{{ i18n "Location" }}</h1>
+    </div>
+    {{ range $.Site.Data.location }}
+    <section>
+      <div class="content">
+        <h2 class="info-title">{{ i18n .title }}</h2>
+        {{ range .items }}
+          <section>
+            <h3 class="info-subtitle">{{ i18n .title}}</h3>
+            {{ range .items }}
+              {{ if .content }}
+                {{ partial "print.html" .content }}
+              {{ else }}
+                {{ partial .template . }}
+              {{ end }}
+            {{ end }}
+          </section>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+  </section>
+{{ end }}
