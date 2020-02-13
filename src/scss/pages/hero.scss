@@ -20,7 +20,6 @@ $hero-color: $black;
   color: $color-white;
   font-size: $font-size-xl;
   text-transform: uppercase;
-  font-family: "Montserrat", "Roboto Light", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,7 +35,10 @@ $hero-color: $black;
 }
 
 .hero-highlight {
-  color: $color-theme;
+  color: $color-green-400;
+  @include medium {
+    color: $color-theme;
+  }
 }
 
 .hero.small {
@@ -57,6 +59,9 @@ $hero-color: $black;
 }
 
 .hero-title {
+  font-family: $heavyFontFamily;
+  font-weight: 800;
+  text-transform: uppercase;
   color: $color-white;
   margin-top: $margin-0;
   font-size: $font-size-6xl;
@@ -126,5 +131,12 @@ $hero-color: $black;
     @include medium {
       color: $hero-color;
     }
+  }
+}
+
+.hero-actions {
+  .button {
+    font-family: $sansFontFamily;
+    font-size: $font-size-xl;
   }
 }
