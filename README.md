@@ -64,7 +64,7 @@ The [data](data) directory has lots of files. Here you will see each one goal:
   - `name`: Required. The category name (Gold, Silver, etc).
   - `items`: Required. List of sponsors inside this category (following the same structure of the communities file)
 
-- [jobs.yaml](data/jobs.yaml): Jobs of the sponsors. For each list item, you need to specify:
+- [jobs.yaml](data/jobs.yaml): Job offers of the sponsors. For each list item, you need to specify:
   - `sponsor`: Required. The same sponsor name as in [data/sponsors.yaml](sponsors.yaml) file.
   - `title`: Required. The job role.
   - `salary`: Required. The salary range. Example: 10K-18K
