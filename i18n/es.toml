@@ -13,7 +13,7 @@ other = 'Patrocinadores'
 
 # Home
 [TicketsStartDate]
-other = 'A la venta el 20 de Abril'
+other = 'A la venta el 15 de Abril'
 [SendYourTalk]
 other = 'Envía tu charla'
 [VisitOurAgenda]
@@ -161,7 +161,7 @@ other = 'Disponemos de un espacio para guardar tu abrigo, casco o maleta. El gua
 [Info]
 other = 'Información'
 [TicketsDesc]
-other = 'La venta de entradas comienza el 20 de Abril. La misma entrada vale para los dos días del evento y habrá varias tandas de entradas. Pero recuerda: las más baratas salen primero. ¡No te quedes sin la tuya!'
+other = 'La venta de entradas comienza el 15 de Abril. La misma entrada vale para los dos días del evento y habrá varias tandas de entradas. Pero recuerda: las más baratas salen primero. ¡No te quedes sin la tuya!'
 [BuyTickets]
 other = 'Comprar entradas'
 [BuyTicketAtTheVenue]
