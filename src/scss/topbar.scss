@@ -17,6 +17,7 @@ $topbar-dropgown-bg-hover: lighten($topbar-dropdown-bg, 15%);
   flex-direction: row;
   position: relative;
   align-items: center;
+  margin-bottom: $margin-0;
   padding-top: $padding-4;
   padding-bottom: $padding-4;
   .popup-menu-contents {
