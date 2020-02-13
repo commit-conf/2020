@@ -46,15 +46,25 @@ $hero-color: $black;
   }
 }
 
+.hero-body {
+  line-height: $line-height-tight;
+  font-size: $font-size-2xl;
+  margin-bottom: $margin-6;
+  @include large {
+    font-size: $font-size-4xl;
+    margin-bottom: $margin-8;
+  }
+}
+
 .hero-title {
   color: $color-white;
   margin-top: $margin-0;
-  font-size: $font-size-5xl;
-  line-height: $line-height-tight;
+  font-size: $font-size-6xl;
+  line-height: $line-height-xtight;
   letter-spacing: -0.06em;
   @include medium {
     color: $hero-color;
-    margin-bottom: $margin-4;
+    margin-bottom: $margin-2;
     font-size: $font-size-6xl;
   }
 }

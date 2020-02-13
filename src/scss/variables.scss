@@ -6,6 +6,7 @@ $heavyFontFamily: Montserrat, Futura, Georgia, helvetica, arial, sans-serif;
 
 // --- Line height ---
 // Extracted from https://tailwindcss.com/docs/line-height
+$line-height-xtight: 1;
 $line-height-tight: 1.25;
 $line-height-snug: 1.375;
 $line-height-normal: 1.5;
@@ -203,10 +204,3 @@ $color-link-hover: $color-blue-800;
 $color-title: #064065;
 //$border-color: #eee;
 $color-theme: #96d131;
-
-// screen sizes
-//$landscape: "only screen and (orientation: landscape)" !default;
-//$portrait: "only screen and (orientation: portrait)" !default;
-$small-up: "only screen and (min-width:450px)" !default;
-$medium-up: "only screen and (min-width:640px)" !default;
-$large-up: "only screen and (min-width:980px)" !default;

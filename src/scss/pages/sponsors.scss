@@ -114,7 +114,7 @@ $sponsorsHeight: 60px;
     @for $i from 1 through 9 {
       &:nth-child(#{$i}) {
         path {
-          fill: scale-color($color-base, $lightness: 100% - 10% * $i) !important;
+          fill: scale-color($color-base, $lightness: 10% * $i) !important;
         }
       }
     }
@@ -138,7 +138,7 @@ $sponsorsHeight: 60px;
     @include graph($color-green-500, $color-teal-900);
   }
   &.roles-graph {
-    @include graph($color-orange-500, $color-indigo-900);
+    @include graph($color-orange-500, $color-blue-900);
   }
 }
 

@@ -11,7 +11,6 @@ body {
   color: $black;
   font-family: $sansFontFamily;
   line-height: $line-height-normal;
-  font-size: $font-size-xl;
   margin: $margin-0;
   padding: $padding-0;
   font-display: swap;
@@ -224,7 +223,7 @@ section.content {
 // big desktop
 @include extra-large {
   .content {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: $margin-0 auto;
   }
 }
