@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+const fs = require("fs");
+const jsyaml = require("js-yaml");
+
+function getJobHeader({ sponsor, title }) {
+  return `---\ntitle: "${sponsor} - ${title}"\ndate: ${new Date().toISOString()}\nlayout: job\n---\n\n# ${title}`;
+}
+
+try {
+  const jobs = jsyaml.safeLoad(fs.readFileSync("data/jobs.yaml", "utf8"));
+  if (jobs) {
+    jobs.forEach(({ template, sponsor, title, i18n }) => {
+      const contentDirectory = `content/jobs/${template.replace(".md", "")}`;
+      const spanishJobFile = `${contentDirectory}/_index.md`;
+      const englishJobFile = `${contentDirectory}/_index.en.md`;
+      const jobHeader = getJobHeader({ sponsor, title });
+      if (!fs.existsSync(spanishJobFile)) {
+        fs.mkdirSync(contentDirectory, { recursive: true });
+      }
+      let jobContent = fs.readFileSync(`src/jobs/${template}`);
+      fs.writeFileSync(spanishJobFile, `${jobHeader}\n\n${jobContent}`, "utf8");
+      jobContent = fs.readFileSync(
+        `src/jobs/${i18n ? template.replace(".md", ".en.md") : template}`
+      );
+      fs.writeFileSync(englishJobFile, `${jobHeader}\n\n${jobContent}`, "utf8");
+    });
+  }
+} catch (e) {
+  console.error(e);
+}

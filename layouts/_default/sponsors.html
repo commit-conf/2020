@@ -18,11 +18,11 @@
     {{ end }}
   </section>
 {{ end }}
-{{ if $.Site.Data.offers}}
+{{ if $.Site.Data.jobs}}
   <section class="content">
     <h1>{{i18n "JobOffers"}}</h1>
     <p>{{i18n "JobOffersDesc"}}</p>
-    <a class="button primary" href="{{ "offers" | relLangURL }}">{{i18n "BoostYourCareer"}}</a>
+    <a class="button primary" href="{{ "jobs" | relLangURL }}">{{i18n "BoostYourCareer"}}</a>
   </section>
 {{ end }}
 <section class="content">
@@ -32,11 +32,11 @@
     <div class="numbers">
       <div class="number-and-text">
         <span class="number">+2000</span>
-        <span class="text lowercase">{{i18n "Attendees"}}</span>
+        <span class="text">{{i18n "Attendees" | lower }}</span>
       </div>
       <div class="number-and-text">
         <span class="number">170</span>
-        <span class="text lowercase">{{ i18n "Speakers"}}</span>
+        <span class="text">{{ i18n "Speakers" | lower }}</span>
       </div>
       <div class="number-and-text">
         <span class="number">12</span>

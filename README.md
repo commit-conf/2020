@@ -64,13 +64,13 @@ The [data](data) directory has lots of files. Here you will see each one goal:
   - `name`: Required. The category name (Gold, Silver, etc).
   - `items`: Required. List of sponsors inside this category (following the same structure of the communities file)
 
-- [offers.yaml](data/offers.yaml): Job offers of the sponsors. For each list item, you need to specify:
+- [jobs.yaml](data/jobs.yaml): Jobs of the sponsors. For each list item, you need to specify:
   - `sponsor`: Required. The same sponsor name as in [data/sponsors.yaml](sponsors.yaml) file.
   - `title`: Required. The job role.
   - `salary`: Required. The salary range. Example: 10K-18K
   - `location`: Required. The location. Example: Madrid, Spain
-  - `tags`: Required. A list of tags to describe the job. Example: [senior, Java, TDD, Scrum, Devops]
-  - `template`: Required. The markdown file with the job offer content. This file should be inside the [src/offers](src/offers) folder. Example: commit/senior-otaku-lover.md
+  - `tags`: Required. A list of tags to describe the job offer. Example: [senior, Java, TDD, Scrum, Devops]
+  - `template`: Required. The markdown file with the job offer content. This file should be inside the [src/jobs](src/jobs) folder. Example: commit/senior-otaku-lover.md
 
 - [c4v.yaml](data/c4v.yaml): Content of the call for volunteers page. Just follow the pattern of the file.
 
@@ -99,7 +99,7 @@ We will show a small section in the homepage. This section will show the list of
 
 #### Job offers
 
-We will show no link anywhere until we have something in the YAML file. Once we have it, we will show a section in the sponsors page to link to the offers page.
+We will show no link anywhere until we have something in the YAML file. Once we have it, we will show a section in the sponsors page to link to the job offers page.
 
 #### Call for volunteers
 
@@ -122,4 +122,3 @@ We have a section to specify how the diversity tickets works. You can specify tw
 #### Announcements
 
 If you want to announce something (the agenda publish dates, next Commit edition dates, whatever) you can specify a i18n entry in `AnnouncementKey` at [config.toml](config.toml).
-

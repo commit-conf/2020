@@ -1,8 +1,8 @@
-.offer > ul {
+.job > ul {
   @extend ul.square;
 }
 
-.offers {
+.jobs {
   @include large {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -10,7 +10,7 @@
   }
 }
 
-.offer-item {
+.job-item {
   display: flex;
   border: 1px solid $color-border;
   border-radius: 3px;
@@ -18,24 +18,28 @@
   align-items: center;
 }
 
-.offer-item-sponsor {
+.job-item-sponsor {
   @extend .sponsor-img;
   width: 120px;
   padding-right: $padding-4;
 }
 
-.offer-item-content {
+.job-item-content {
   border-left: 1px solid $color-border;
   padding-left: $padding-4;
   font-size: $font-size-l;
   flex: 1;
 }
 
-.offer-item-title, .salary {
+.job-item-title, .salary {
   font-size: $font-size-xl;
 }
 
-.offer-item-header, .offer-item-details {
+.job-item-details {
+  flex: 1;
+}
+
+.job-item-header, .job-item-details-container {
   @include medium {
     display: flex;
     flex-direction: row;
@@ -46,6 +50,7 @@
 
 .salary {
   color: $color-green-700;
+  margin-top: $margin-1;
 }
 
 .location, .tags {

@@ -1,7 +1,7 @@
 {{ define "main" }}
 <section class="content">
   <h1>{{i18n "JobOffers"}}</h1>
-  {{ if $.Site.Data.offers}}
+  {{ if $.Site.Data.jobs}}
     {{ $sponsorsLogos := dict }}
     {{ range $.Site.Data.sponsors }}
       {{ range .items }}
@@ -10,19 +10,19 @@
         {{ $sponsorsLogos = merge $sponsorsLogos (dict .name $logo) }}
       {{ end }}
     {{ end }}
-    <ul class="offers">
-      {{ range $.Site.Data.offers }}
-        <li class="offer-item">
-          <div class="offer-item-sponsor">
+    <ul class="jobs">
+      {{ range $.Site.Data.jobs }}
+        <li class="job-item">
+          <div class="job-item-sponsor">
             <img src="/img/sponsors/{{index $sponsorsLogos .sponsor}}" alt="{{.sponsor}}">
           </div>
-          <div class="offer-item-content">
-            <div class="offer-item-header">
-              <h2 class="offer-item-title">{{.title}}</h2>
+          <div class="job-item-content">
+            <div class="job-item-header">
+              <h2 class="job-item-title">{{.title}}</h2>
               <div class="salary">{{.salary}}</div>
             </div>
-            <div class="offer-item-details">
-              <div>
+            <div class="job-item-details-container">
+              <div class="job-item-details">
                 <span class="location">{{.location}}</span>
                 <span class="tags">
                   {{ range .tags }}
@@ -30,7 +30,7 @@
                   {{ end }}
                 </span>
               </div>
-              <a class="offer-link">{{i18n "ViewJobOffer"}}</a>
+              <a class="job-link">{{i18n "ViewJobOffer"}}</a>
             </div>
           </div>
         </li>
