@@ -1,84 +1,25 @@
-@media #{$small-up} {
-}
-
-@media #{$medium-up} {
-  .topbar-dropdown-menu {
-    display: none;
-  }
-  .topbar-link {
-    display: flex;
-  }
-
-  // block of text with image aside
-  .main-and-aside {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    & > .main {
-      flex-grow: 1;
-      padding-right: 1rem;
-    }
-  }
-
-  .attendees {
-    width: 250px;
-    min-width: 250px;
-  }
-  .location-description > .content {
-    display: flex;
-    align-items: center;
-  }
-  .ceu-logo-a {
-    margin-right: 2rem;
-    margin-bottom: 0;
-  }
-  .address {
-    margin-bottom: 0;
-  }
-
-  .form-inline > input[type="email"] {
-    width: 400px;
-  }
-
-  .footer-row > .content.aligned {
-    flex-direction: row;
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  h3 {
-    font-size: 25px;
-  }
-  h4 {
-    font-size: 20px;
-  }
-  h5 {
-    font-size: 16px;
-  }
-  h6 {
-    font-size: 14px;
+// Sizes and rationale copied from https://tailwindcss.com/docs/responsive-design
+// Use: @include small { ... }
+@mixin small {
+  @media (min-width: 640px) {
+    @content;
   }
 }
 
-@media #{$large-up} {
-
-  // two columns of text with same weight
-  .two-columns {
-    column-count: 2;
-    column-gap: 3rem;
-    margin-bottom: 1rem;
+@mixin medium {
+  @media (min-width: 768px) {
+    @content;
   }
-
 }
 
-// big desktop
-@media only screen and (min-width: 1200px) {
-  .content {
-    max-width: 1200px;
-    margin: 0 auto;
+@mixin large {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin extra-large {
+  @media (min-width: 1280px) {
+    @content;
   }
 }

@@ -2,12 +2,12 @@
 @import "normalize";
 @import "variables";
 @import "fonts";
+@import "responsive";
 @import "core";
 @import "utils";
 @import "topbar";
 @import "footer";
 @import "buttons";
-@import "forms";
 @import "cookies";
 @import "messages";
 
@@ -21,4 +21,3 @@
 @import "pages/offers";
 @import "pages/team";
 
-@import "responsive";

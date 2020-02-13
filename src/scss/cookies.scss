@@ -1,10 +1,3 @@
-$cookie-font-size: 15px;
-$cookie-medium-font-size: 20px;
-$cookie-bg-color: #111; //#eaf1f1;
-$cookie-color: #fff; // #222;
-$cookie-button-bg-color: #334f66;
-$cookie-link-color: #48aaf9;
-
 .cookie-container {
   position: fixed;
   z-index: 10;
@@ -12,20 +5,20 @@ $cookie-link-color: #48aaf9;
   left: 0;
   width: 100%;
 
-  background: rgba(0,0,0,0.9);
-  color: #fff;
-  padding: 2rem 0;
+  background: rgba($color-black,0.9);
+  color: $color-white;
+  padding: $padding-8 0;
 }
 
 .cookie-title {
-  color: #fff;
+  color: $color-white;
 }
 
 .cookie-btn {
   margin-bottom: 0;
 }
 
-@media #{$medium-up} {
+@include medium {
   .cookie-description {
     margin-bottom: 0;
   }

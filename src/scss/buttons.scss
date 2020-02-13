@@ -6,7 +6,7 @@ $button-info-bg: $color-orange-600;
 $button-info-color: $color-white;
 
 .button {
-  padding: 10px 20px;
+  padding: $padding-4 $padding-8;
   border-radius: 3px;
   display: inline-block;
   text-decoration: none;
@@ -14,7 +14,7 @@ $button-info-color: $color-white;
   border-bottom-width: 3px;
   background: $button-bg;
   color: $button-color;
-  margin: 0 .5rem 1rem 0;
+  margin: $margin-0 $margin-2 $margin-4 $margin-0;
 
   &:focus, &:hover, &:active {
     background-color: darken($button-bg, 5%);
@@ -38,11 +38,15 @@ $button-info-color: $color-white;
       color: $button-info-color;
     }
   }
+  &.small {
+    padding: $padding-2 $padding-4;
+    font-size: $font-size-base;
+  }
 }
 
 .button-small {
   font-family: $heavyFontFamily;
-  font-size: 77%;
+  font-size: $font-size-base;
   font-weight: 300;
   text-transform: uppercase;
   display: block;
@@ -50,7 +54,7 @@ $button-info-color: $color-white;
 
 // a bar of buttons
 .actions {
-  margin-top: $section-vertical-margin;
+  margin-top: $margin-6;
   text-align: left;
 }
 

@@ -1,4 +1,4 @@
-$topbar-bg: rgba(0, 0, 0, 0.9);
+$topbar-bg: rgba($color-black, 0.9);
 $topbar-color: $color-white;
 $topbar-dropdown-bg: $black;
 $topbar-dropgown-bg-hover: lighten($topbar-dropdown-bg, 15%);
@@ -17,19 +17,19 @@ $topbar-dropgown-bg-hover: lighten($topbar-dropdown-bg, 15%);
   flex-direction: row;
   position: relative;
   align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: $padding-4;
+  padding-bottom: $padding-4;
   .popup-menu-contents {
     top: 70px;
     right: 10px;
   }
 }
-$logo-margin: 0rem 1rem;
+$logo-margin: $margin-0 $margin-4;
 .topbar-logo {
   float: left;
   display: block;
   margin: $logo-margin;
-  margin-left: 0;
+  margin-left: $margin-0;
   min-width: 100%;
 }
 .topbar-separator {
@@ -60,7 +60,7 @@ $logo-margin: 0rem 1rem;
 .topbar-hamburger {
   width: 2rem;
   height: 2rem;
-  padding: 0.4rem;
+  padding: $padding-1;
   text-align: right;
   display: inline-block;
 }
@@ -77,7 +77,7 @@ $logo-margin: 0rem 1rem;
   z-index: 89;
   .topbar-link {
     display: block;
-    padding: 10px 20px;
+    padding: $padding-2 $padding-4;
     &:hover {
       background: $topbar-dropgown-bg-hover;
     }
@@ -104,6 +104,9 @@ $logo-margin: 0rem 1rem;
       display: block;
     }
   }
+  @include medium {
+    display: none;
+  }
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -122,4 +125,8 @@ $logo-margin: 0rem 1rem;
   overflow: hidden;
 }
 
-
+@include medium {
+  .topbar-link {
+    display: flex;
+  }
+}

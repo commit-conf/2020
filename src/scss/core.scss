@@ -7,13 +7,13 @@
 
 // Default body styles
 body {
-  background: #fff;
-  color: #222;
+  background: $color-white;
+  color: $black;
   font-family: $sansFontFamily;
-  line-height: 1.5;
-  font-size: $baseFontSize;
-  margin: 0;
-  padding: 0;
+  line-height: $line-height-normal;
+  font-size: $font-size-xl;
+  margin: $margin-0;
+  padding: $padding-0;
   font-display: swap;
   position: relative;
 }
@@ -42,18 +42,18 @@ p,
 blockquote,
 th,
 td {
-  margin: 0;
-  padding: 0;
+  margin: $margin-0;
+  padding: $padding-0;
 }
 
 a {
   cursor: pointer;
-  color: $linkColor;
+  color: $color-link;
   text-decoration: underline;
 
   &:hover,
   &:focus {
-    color: $linkColorHover;
+    color: $color-link-hover;
   }
 
   & > img {
@@ -62,8 +62,8 @@ a {
 }
 
 p {
-  margin-bottom: $paragraph-margin-bottom;
-  @media #{$medium-up} {
+  margin-bottom: $margin-4;
+  @include medium {
     text-align: justify;
   }
 }
@@ -74,10 +74,10 @@ h3,
 h4,
 h5,
 h6 {
-  color: $title-color;
-  line-height: 1.2;
-  margin-bottom: .4em;
-  margin-top: 0.2em;
+  color: $color-title;
+  line-height: $line-height-tight;
+  margin-bottom: $margin-4;
+  margin-top: $margin-2;
   //  text-rendering: optimizeLegibility;
 
   & > a {
@@ -98,37 +98,28 @@ h1 {
   font-family: $heavyFontFamily;
   font-weight: 800;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: $font-size-4xl;
 //  color: #4a4a4a;
 }
 h2 {
-  font-size: 30px;
+  font-size: $font-size-3xl;
 }
 h3 {
-  font-size: 25px;
-}
-h4 {
-  font-size: 20px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 14px;
+  font-size: $font-size-2xl;
 }
 
 hr {
-  border: solid #ddd;
+  border: solid $color-gray-400;
   border-width: 1px 0 0;
   clear: both;
   height: 1px;
-  margin: $hr-margin 0;
+  margin: $margin-10 $margin-0;
 }
 
 // small font, will use gray color
 small,
 .small {
-  font-size: 80%;
+  font-size: $font-size-l;
   line-height: inherit;
   color: $color-gray-600;
 }
@@ -138,7 +129,7 @@ ul,
 ol,
 dl {
   list-style-position: outside;
-  margin-bottom: $paragraph-margin-bottom;
+  margin-bottom: $margin-4;
 }
 
 $list-side-margin: 2rem;
@@ -165,29 +156,41 @@ dl {
 
 // container with max-width 980px
 .content {
-  padding: 0 2rem;
+  padding: $padding-0 $padding-8;
   width: 100%;
 }
 
 .highlight {
-  font-size: 23px;
-  color: $title-color;
+  font-size: $font-size-2xl;
+  color: $color-title;
 }
 
 pre {
   border: 1px solid $color-border;
-  padding: 1rem;
-  font-size: 14px;
+  padding: $padding-4;
+  font-size: $font-size-s;
   border-radius: 3px;
 }
 
-.main-and-aside > aside {
-  margin-bottom: $section-vertical-margin;
+.main-and-aside {
+  & > aside {
+    margin-bottom: $margin-6;
+  }
+  @include medium {
+    // block of text with image aside
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    & > .main {
+      flex-grow: 1;
+      padding-right: $padding-4;
+    }
+  }
 }
 
 // no leading image in the page (e.g. cookies.html)
 h1.lead {
-  margin-top: 2rem;
+  margin-top: $margin-8;
 }
 
 quote {
@@ -195,16 +198,33 @@ quote {
   border: 1px solid $color-blue-800;
   border-left-width: 5px;
   display: block;
-  padding: 1rem;
+  padding: $padding-4;
   background-color: rgba($color-blue-200, .3);
 }
 
 .quote-source {
-  margin-bottom: 0;
+  margin-bottom: $margin-0;
   text-align: right;
-  font-size: 80%;
+  font-size: $font-size-l;
 }
 
 section.content {
-  padding-top: 4rem;
+  padding-top: $padding-16;
+}
+
+@include large {
+  // two columns of text with same weight
+  .two-columns {
+    column-count: 2;
+    column-gap: $margin-12;
+    margin-bottom: $margin-4;
+  }
+}
+
+// big desktop
+@include extra-large {
+  .content {
+    max-width: 1200px;
+    margin: $margin-0 auto;
+  }
 }

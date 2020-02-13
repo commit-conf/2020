@@ -7,10 +7,10 @@ $sponsorPadding: 20px;
 $sponsorsHeight: 60px;
 
 .sponsor-category {
-  margin: 1rem 0;
+  margin: $margin-4 $margin-0;
   border-bottom: 1px solid $color-border;
-  padding: 1rem 0;
-  @media #{$medium-up} {
+  padding: $padding-4 $padding-0;
+  @include medium {
     display: grid;
     grid-template-columns: 140px 1fr;
   }
@@ -19,14 +19,14 @@ $sponsorsHeight: 60px;
 .sponsor-category-name {
   align-items: center;
   display: flex;
-  font-size: 120%;
+  font-size: $font-size-2xl;
 }
 
 .category-sponsors {
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  @media #{$medium-up} {
+  @include medium {
     display: flex;
     flex-wrap: wrap;
   }
@@ -49,14 +49,14 @@ $sponsorsHeight: 60px;
 .sponsors-small {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem 2rem;
-  padding: 1rem 0;
+  grid-gap: $margin-4 $margin-8;
+  padding: $padding-4 $padding-0;
   justify-content: center;
   align-items: center;
-  @media #{$medium-up} {
+  @include medium {
     grid-template-columns: repeat(5, 1fr);
   }
-  @media #{$large-up} {
+  @include large {
     grid-template-columns: repeat(7, 1fr);
   }
 }
@@ -74,12 +74,12 @@ $sponsorsHeight: 60px;
 
 .numbers {
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: $margin-4;
   align-items: center;
   grid-auto-rows: 1fr;
-  padding-top: 1rem;
+  padding-top: $padding-4;
   grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
-  @media #{$large-up} {
+  @include large {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 }
@@ -88,20 +88,20 @@ $sponsorsHeight: 60px;
   display: flex;
   text-align: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 100%;
   color: #555;
   > .number {
-    font-size: 2.2rem;
+    font-size: $font-size-4xl;
   }
 }
 
 .graphics {
-  padding-top: 3rem;
+  padding-top: $padding-12;
   display: grid;
   grid-template-columns: 1fr;
-  @media #{$large-up} {
+  @include large {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -120,9 +120,11 @@ $sponsorsHeight: 60px;
     }
     path {
       stroke-width: 0.25rem;
+      /*
       &.primary {
         fill: $color-primary !important;
       }
+      */
     }
   }
 }
@@ -131,16 +133,16 @@ $sponsorsHeight: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 3rem;
+  padding-bottom: $padding-12;
   &.experience-graph {
-    @include graph($color-green-500);
+    @include graph($color-green-500, $color-teal-900);
   }
   &.roles-graph {
-    @include graph($color-orange-500);
+    @include graph($color-orange-500, $color-indigo-900);
   }
 }
 
 .graph-title {
-  padding-top: 1rem;
+  padding-top: $padding-4;
   font-variant: all-small-caps;
 }

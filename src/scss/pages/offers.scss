@@ -3,10 +3,10 @@
 }
 
 .offers {
-  @media #{$large-up} {
+  @include large {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: $margin-4;
   }
 }
 
@@ -14,29 +14,29 @@
   display: flex;
   border: 1px solid $color-border;
   border-radius: 3px;
-  padding: 1rem;
+  padding: $padding-4;
   align-items: center;
 }
 
 .offer-item-sponsor {
   @extend .sponsor-img;
   width: 120px;
-  padding-right: 1rem;
+  padding-right: $padding-4;
 }
 
 .offer-item-content {
   border-left: 1px solid $color-border;
-  padding-left: 1rem;
-  font-size: 1rem;
+  padding-left: $padding-4;
+  font-size: $font-size-l;
   flex: 1;
 }
 
 .offer-item-title, .salary {
-  font-size: 1.25rem;
+  font-size: $font-size-xl;
 }
 
 .offer-item-header, .offer-item-details {
-  @media #{$medium-up} {
+  @include medium {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -50,7 +50,7 @@
 
 .location, .tags {
   display: inline;
-  padding-right: .5rem;
+  padding-right: $padding-2;
 }
 
 .tags {

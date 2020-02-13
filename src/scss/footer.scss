@@ -1,18 +1,15 @@
 $footer-link-color: $color-white;
 $footer-link-hover-color: $color-orange-500;
-$footer-bg: #252A29;
-$footer-theme-2-bg: darken($footer-bg, 10%);
+$footer-bg: $color-gray-800;
+$footer-theme-2-bg: $color-gray-900;
 
-$footer-padding: 40px;
+$footer-padding: $padding-10;
 
 footer {
   width: 100%;
-  margin-top: $hr-margin;
+  margin-top: $margin-10;
 }
 
-footer dd {
-  margin-bottom: 0;
-}
 .footer-row {
   padding-bottom: $footer-padding;
   background: $footer-bg;
@@ -28,22 +25,22 @@ footer dd {
 }
 .footer-column {
   padding-top: $footer-padding;
-  margin-bottom: 0;
-  margin-right: 10px;
+  margin-bottom: $margin-0;
+  margin-right: $margin-4;
   flex-grow: 1;
 }
 .footer-column-title {
   text-transform: uppercase;
   color: $footer-link-hover-color;
-  margin-bottom: .3rem;
+  margin-bottom: $margin-1;
   font-weight: bold;
-  font-size: 16px;
+  font-size: $font-size-l;
   letter-spacing: 1px;
 }
 .footer-link {
   color: $footer-link-color;
   transition: color .2s ease;
-  font-size: 16px;
+  font-size: $font-size-l;
   text-decoration: none;
   &:hover, &:focus, &:active {
     color: $footer-link-hover-color;
@@ -64,7 +61,7 @@ footer dd {
 }
 .footer-credits {
   color: $footer-link-color;
-  font-size: 14px;
+  font-size: $font-size-base;
   flex-grow: 1;
   &> .title {
     color: $footer-link-hover-color;
@@ -84,4 +81,10 @@ footer dd {
   overflow: hidden;
   background: url(/img/extrema.png) no-repeat 0 0;
   background-size: contain;
+}
+
+@include medium {
+  .footer-row > .content.aligned {
+    flex-direction: row;
+  }
 }

@@ -1,42 +1,42 @@
-$hero-bg-color: #fff;
+$hero-bg-color: $color-white;
 $hero-color: $black;
 
 .hero {
   min-height: 400px;
   position: relative;
-  @media #{$medium-up} {
+  @include medium {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: $padding-8;
     min-height: 600px;
-    margin-bottom: 2rem !important;
+    margin-bottom: $margin-8 !important;
     z-index: 1;
   }
 }
 
 .hero-text {
   color: $color-white;
-  font-size: 22px;
+  font-size: $font-size-xl;
   text-transform: uppercase;
   font-family: "Montserrat", "Roboto Light", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   word-break: break-word;
-  padding: 2rem 1rem 2rem 0;
+  padding: $padding-8 $padding-4 $padding-8 $padding-0;
   height: 100%;
   min-height: 400px;
-  @media #{$medium-up} {
+  @include medium {
     color: $hero-color;
-    font-size: 24px;
+    font-size: $font-size-2xl;
   }
 
 }
 
 .hero-highlight {
-  color: $theme-color;
+  color: $color-theme;
 }
 
 .hero.small {
@@ -48,23 +48,14 @@ $hero-color: $black;
 
 .hero-title {
   color: $color-white;
-  margin-top: 0;
-  font-size: 40px;
-  line-height: 1;
+  margin-top: $margin-0;
+  font-size: $font-size-5xl;
+  line-height: $line-height-tight;
   letter-spacing: -0.06em;
-  @media #{$medium-up} {
+  @include medium {
     color: $hero-color;
-    margin-bottom: 0.2em;
-    font-size: 60px;
-  }
-  @media #{$large-up} {
-    //margin-bottom: 0.2em;
-    //font-size: 110px;
-  }
-}
-.hero-body {
-  @media #{$large-up} {
-    //font-size: 50px;
+    margin-bottom: $margin-4;
+    font-size: $font-size-6xl;
   }
 }
 
@@ -88,9 +79,9 @@ $hero-color: $black;
     background-color: rgba($black, 0.5);
 
   }
-  @media #{$medium-up} {
+  @include medium {
     position: relative;
-    margin-right: -2rem;
+    margin-right: -$margin-8;
     background-image: url("/img/background-large.webp");
     &::before {
       background-color: transparent;
@@ -100,17 +91,17 @@ $hero-color: $black;
   _::-webkit-full-page-media, _:future, :root .safari_only {
     // Safari 
     background-image: url("/img/background.jpg");
-    @media #{$medium-up} {
+    @include medium {
       background-image: url("/img/background-large.jpg");
     }
   }
 }
 
+// IE9+ CSS
 @media screen and (min-width:0\0) and (min-resolution: +72dpi) {
-  // IE9+ CSS
   .hero-image {
     background-image: url("/img/background.jpg");
-    @media #{$medium-up} {
+    @include medium {
       background-image: url("/img/background-large.jpg");
     }
   }
@@ -122,7 +113,7 @@ $hero-color: $black;
   h3 {
     color: $color-white;
     font-family: "Montserrat", "Roboto Light", sans-serif;
-    @media #{$medium-up} {
+    @include medium {
       color: $hero-color;
     }
   }

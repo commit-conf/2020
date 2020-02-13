@@ -2,15 +2,13 @@
   & h1 {
     color: $color-blue-800;
   }
-
-
 }
 
 .home-content {
-  @media #{$large-up} {
+  @include large {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
+    column-gap: $margin-8;
   }
 }
 
@@ -18,7 +16,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 2rem 0;
+  padding: $padding-8 $padding-0;
   background-color: rgba($color-gray-400, .3);
 }
 
@@ -29,19 +27,19 @@
   justify-content: center;
 }
 .stat-number {
-  color: $theme-color;
-  font-size: 46px;
+  color: $color-theme;
+  font-size: $font-size-5xl;
   text-shadow: 0px 1px 3px $black;
 }
 
 .communities {
-  padding-top: 1rem 0;
+  padding-top: $padding-4 $padding-0;
 }
 
 .youtube-player-container {
-  margin: 2rem 0;
-  @media #{$large-up} {
-    margin: 0;
+  margin: $margin-8 $margin-0;
+  @include large {
+    margin: $margin-0;
   }
 }
 
@@ -54,7 +52,7 @@ iframe.youtube-player {
   display: flex;
   justify-content: center;
   align-items: center;
-  @media #{$medium-up} {
+  @include medium {
     &::before {
       display: block;
       content: '';
@@ -68,28 +66,28 @@ iframe.youtube-player {
 
 .knowledge-content {
   > .bacon {
-    margin-bottom: 2rem;
-    @media #{$medium-up} {
+    margin-bottom: $margin-8;
+    @include medium {
       margin-left: -8rem;
       margin-bottom: 0;
     }
   }
-  @media #{$medium-up} {
+  @include medium {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
-    column-gap: 2rem;
+    column-gap: $margin-8;
     align-items: center;
   }
-  @media #{$large-up} {
+  @include large {
     grid-template-columns: 0.8fr 1fr;
   }
 }
 
 .diversity-content {
-  @media #{$medium-up} {
+  @include medium {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: $margin-8;
   }
 }
 
@@ -162,20 +160,20 @@ $bg-circle-border: 2px;
     &:nth-child(#{$offset + 1}) {
       
       @include bg-circle(600px, -160px + $topOffset, -14%);
-      @media #{$medium-up} {
+      @include medium {
         display: block;
         @include bg-circle(600px, -160px + $topOffset, -30%);
       }
-      @media #{$large-up} {
+      @include large {
         @include bg-circle(600px, -160px  + $topOffset, -15%);
       }
     }
     &:nth-child(#{$offset + 2}) {
       @include bg-circle(300px, 440px + $topOffset, -14%);
-      @media #{$medium-up} {
+      @include medium {
         @include bg-circle(300px, 390px + $topOffset, 27%);
       }
-      @media #{$large-up} {
+      @include large {
         @include bg-circle(300px, 390px + $topOffset, 40%);
       }
     }
@@ -184,34 +182,34 @@ $bg-circle-border: 2px;
     }
     &:nth-child(#{$offset + 4}) {
       @include bg-circle(250px, 820px + $topOffset, 22%);
-      @media #{$medium-up} {
+      @include medium {
         @include bg-circle(250px, 820px + $topOffset, 35%);
       }
     }
     &:nth-child(#{$offset + 5}) {
       @include bg-circle(450px, 1250px + $topOffset, -55%);
-      @media #{$medium-up} {
+      @include medium {
         @include bg-circle(450px, 1250px + $topOffset, -5%);
       }
-      @media #{$large-up} {
+      @include large {
         @include bg-circle(450px, 980px + $topOffset, -5%);
       }
     }
     &:nth-child(#{$offset + 6}) {
       @include bg-circle(380px, 1290px + $topOffset, 60%);
-      @media #{$large-up} {
+      @include large {
         @include bg-circle(520px, 1290px + $topOffset, 60%);
       }
     }
     &:nth-child(#{$offset + 7}) {
       @include bg-circle(360px, 1720px + $topOffset, 37%);
-      @media #{$large-up} {
+      @include large {
         @include bg-circle(460px, 1680px + $topOffset, -10%);
       }
     }
     &:nth-child(#{$offset + 8}) {
       @include bg-circle(160px, 2175px + $topOffset, 22%);
-      @media #{$large-up} {
+      @include large {
         @include bg-circle(160px, 2075px + $topOffset, 45%);
       }
     }
@@ -220,7 +218,7 @@ $bg-circle-border: 2px;
     }
     &:nth-child(#{$offset + 10}) {
       @include bg-circle(290px, 2675px + $topOffset, 4%);
-      @media #{$large-up} {
+      @include large {
         @include bg-circle(390px, 2470px + $topOffset, 20%);
       }
     }

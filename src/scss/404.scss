@@ -1,9 +1,9 @@
 .not-found {
-  margin-top: 1rem;
-  @media #{$medium-up} {
+  margin-top: $margin-4;
+  @include medium {
     max-width: 70%;
   }
-  @media #{$large-up} {
+  @include large {
     max-width: 50%;
   }
 }
