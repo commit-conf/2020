@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ if $.Site.Data.sponsors }}
-  <section class="content">
+  <section class="content padding">
     <h1>{{i18n "OurSponsors"}}</h1>
     {{ range $category := $.Site.Data.sponsors }}
       <div class="sponsor-category">
@@ -19,13 +19,13 @@
   </section>
 {{ end }}
 {{ if $.Site.Data.jobs}}
-  <section class="content">
+  <section class="content padding">
     <h1>{{i18n "JobOffers"}}</h1>
     <p>{{i18n "JobOffersDesc"}}</p>
     <a class="button primary" href="{{ "jobs" | relLangURL }}">{{i18n "BoostYourCareer"}}</a>
   </section>
 {{ end }}
-<section class="content">
+<section class="content padding">
   <h1>{{i18n "AreYouInterested"}}</h1>
   <section>
     <h2>{{i18n "OurNumbers"}}</h2>

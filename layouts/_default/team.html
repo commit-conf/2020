@@ -1,27 +1,23 @@
 {{ define "main" }}
 
-<section class="content">
+<section class="content padding">
   <h1 class="lead">{{ i18n "TheTeam" }}</h1>
   <h2>{{ i18n "TheTeamSubtitle" }}</h2>
   <p>{{ i18n "TheTeamDesc" }}</p>
   <div class="team">
     {{ range $.Site.Data.team }}
-      <div class="avatar-and-text">
-        <div>
-          <img src="/img/team/{{.avatar}}.jpeg" class="avatar" />
-        </div>
-        <div class="text">
-          <p>
-            <b>{{ .name }}:</b> {{ (index .desc $.Site.Language.Lang) }}
-          </p>
-          {{ if isset . "twitter" }}
-          <a href="https://twitter.com/{{.twitter}}">{{.twitter}}</a> {{ end }}
-        </div>
-      </div>  
+    <div class="avatar-and-text">
+      <div>
+        <img src="/img/team/{{.avatar}}.jpeg" class="avatar" />
+      </div>
+      <div class="text">
+        <p><b>{{ .name }}:</b> {{ (index .desc $.Site.Language.Lang) }}</p>
+        {{ if isset . "twitter" }}
+        <a href="https://twitter.com/{{.twitter}}">{{.twitter}}</a> {{ end }}
+      </div>
+    </div>
     {{ end }}
   </div>
 </section>
-  
-{{ partial "communities.html" . }}
-  
-{{ end }}
+
+{{ partial "communities.html" . }} {{ end }}

@@ -1,30 +1,36 @@
-<section class="content">
-  {{ $sponsors := where (default (slice ) $.Site.Data.sponsors) "name" "ne" "Collaborators" }}
-  {{ $sponsorsCount :=  0 }}
-  {{ range $sponsors }}
-    {{ $sponsorsCount = add $sponsorsCount (len .items) }}
-  {{ end }}
-  {{ if ge $sponsorsCount $.Site.Params.minSponsorsCountForHome }}
-    <div class="sponsors-small">
-      {{ range $category := $sponsors }}
-        {{ $normalizedCategoryName := .name | replaceRE "[^a-zA-Z0-9]+" "-" | lower }}
-          {{ range .items }}
-            {{ $normalizedName := .name | replaceRE "[^a-zA-Z0-9]+" "-" | lower }}
-            {{ $logo := cond (isset . "logo") (cond (isset .logo "file") .logo.file (printf "%s.%s" $normalizedName .logo.type)) (printf "%s.svg" $normalizedName) }}
-            <div itemprop="sponsor" itemscope itemtype="http://schema.org/Organization">
-              <a href="{{.href | safeURL }}" itemprop="url" title="{{.name}}" class="sponsor {{$normalizedCategoryName}}" target="_blank" rel="noopner noreferrer">
-                <meta itemprop="name" content="{{.name}}">
-                <meta itemprop="logo" content="{{ print "/img/sponsors/" $logo | absURL }}">
-                <img src="/img/sponsors/{{$logo}}" alt="{{.name}}" class="sponsor-img {{$normalizedName}}">
-              </a>
-            </div>
-          {{ end }}
-      {{ end }}
+{{ $sponsors := where (default (slice ) $.Site.Data.sponsors) "name" "ne" "Collaborators" }}
+{{ $sponsorsCount :=  0 }}
+{{ range $sponsors }}
+  {{ $sponsorsCount = add $sponsorsCount (len .items) }}
+{{ end }}
+{{ if ge $sponsorsCount $.Site.Params.minSponsorsCountForHome }}
+  <section class="content padding">
+    <div>
+      <div class="sponsors-small">
+        {{ range $category := $sponsors }}
+          {{ $normalizedCategoryName := .name | replaceRE "[^a-zA-Z0-9]+" "-" | lower }}
+            {{ range .items }}
+              {{ $normalizedName := .name | replaceRE "[^a-zA-Z0-9]+" "-" | lower }}
+              {{ $logo := cond (isset . "logo") (cond (isset .logo "file") .logo.file (printf "%s.%s" $normalizedName .logo.type)) (printf "%s.svg" $normalizedName) }}
+              <div itemprop="sponsor" itemscope itemtype="http://schema.org/Organization">
+                <a href="{{.href | safeURL }}" itemprop="url" title="{{.name}}" class="sponsor {{$normalizedCategoryName}}" target="_blank" rel="noopner noreferrer">
+                  <meta itemprop="name" content="{{.name}}">
+                  <meta itemprop="logo" content="{{ print "/img/sponsors/" $logo | absURL }}">
+                  <img src="/img/sponsors/{{$logo}}" alt="{{.name}}" class="sponsor-img {{$normalizedName}}">
+                </a>
+              </div>
+            {{ end }}
+        {{ end }}
+      </div>
+      <div><small>{{i18n "AreYouInterested"}} <a href="{{"/sponsors" | relLangURL}}">{{i18n "BePartOfThem" | safeHTML}}</a></small></div>
     </div>
-    <div><small>{{i18n "AreYouInterested"}} <a href="{{"/sponsors" | relLangURL}}">{{i18n "BePartOfThem" | safeHTML}}</a></small></div>
-  {{ else }}
-    <h1>{{i18n "OurSponsors"}}</h1>
-    <p>{{i18n "OurSponsorsDesc"}}</p>
-    <a href="{{"/sponsors" | relLangURL}}" class="button primary">{{i18n "BePartOfThem"}}</a>
-  {{ end }}
-</section>
+  </section>
+{{ else }}
+  <div class="border-top border-bottom">
+    <section class="content padding">
+      <h1>{{i18n "OurSponsors"}}</h1>
+      <p>{{i18n "OurSponsorsDesc"}}</p>
+      <a href="{{"/sponsors" | relLangURL}}" class="button primary">{{i18n "BePartOfThem"}}</a>
+    </section>
+  </div>
+{{ end }}

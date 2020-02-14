@@ -74,15 +74,11 @@
     {{ end }}
   </div>
   <div class="home-highlight">
-    <section class="content">
+    <section class="content padding">
       <h1>{{i18n "BeHere"}}</h1>
       <div class="home-content">
         <div>
-          <h2 class="highlight">
-            {{ i18n "BeHereShortDesc" }}
-          </h2>
-          <p>{{ i18n "BeHereDesc" | safeHTML }}</p>
-          <p itemprop="description">{{ i18n "LongSummary" }}</p>
+          {{ i18n "BeHereDesc" | safeHTML }}
           {{ if $.Site.Params.AnnouncementKey }}
             <p class="message">{{i18n $.Site.Params.AnnouncementKey }}</p>
           {{ end }}
@@ -95,8 +91,6 @@
   </div>
 
   {{ partial "sponsors-small.html" . }}
-
-  {{ partial "info.html" . }}
 
   {{ partial "diversity.html" . }}
   

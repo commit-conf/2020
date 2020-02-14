@@ -1,5 +1,4 @@
 $footer-link-color: $color-white;
-$footer-link-hover-color: $color-orange-500;
 $footer-bg: $color-gray-800;
 $footer-theme-2-bg: $color-gray-900;
 
@@ -31,8 +30,8 @@ footer {
 }
 .footer-column-title {
   text-transform: uppercase;
-  color: $footer-link-hover-color;
-  margin-bottom: $margin-1;
+  color: $color-orange-500;
+  margin-bottom: $margin-4;
   font-weight: bold;
   font-size: $font-size-l;
   letter-spacing: 1px;
@@ -40,10 +39,12 @@ footer {
 .footer-link {
   color: $footer-link-color;
   transition: color .2s ease;
-  font-size: $font-size-l;
+  font-size: $font-size-base;
   text-decoration: none;
+  display: block;
+  padding: $padding-2 0;
   &:hover, &:focus, &:active {
-    color: $footer-link-hover-color;
+    color: $footer-link-color;
     text-decoration: underline;
   }
 }
@@ -58,14 +59,6 @@ footer {
   background-size: contain;
   margin-right: 20px;
   flex-grow: 1;
-}
-.footer-credits {
-  color: $footer-link-color;
-  font-size: $font-size-base;
-  flex-grow: 1;
-  &> .title {
-    color: $footer-link-hover-color;
-  }
 }
 .extrema-container {
   display: flex;

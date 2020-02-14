@@ -78,6 +78,7 @@ h6 {
   font-weight: 300;
   color: $color-title;
   line-height: $line-height-tight;
+  margin-top: 0;
 
   & > a {
     color: inherit;
@@ -85,19 +86,22 @@ h6 {
 }
 
 h1 {
-  font-size: $font-size-6xl;
-  margin-bottom: $margin-4;
-  margin-top: $margin-2;
+  font-size: $font-size-4xl;
+  margin-bottom: $margin-3;
+  @include small {
+    font-size: $font-size-5xl;
+  }
 }
 h2 {
-  font-size: $font-size-5xl;
-  margin-bottom: $margin-4;
-  margin-top: $margin-2;
+  font-size: $font-size-2xl;
+  margin-bottom: $margin-2;
+  @include small {
+    font-size: $font-size-3xl;
+  }
 }
 h3 {
   font-size: $font-size-2xl;
-  margin-bottom: $margin-3;
-  margin-top: $margin-1;
+  margin-bottom: $margin-2;
 }
 
 hr {
@@ -113,7 +117,7 @@ small,
 .small {
   font-size: $font-size-l;
   line-height: inherit;
-  color: $color-gray-600;
+  color: $color-gray-700;
 }
 
 // Lists
@@ -127,11 +131,10 @@ dl {
 $list-side-margin: 2rem;
 ul {
   list-style-type: none;
-
-  &.square {
-    list-style-type: square;
-    margin-left: $list-side-margin;
-  }
+}
+.square {
+  list-style-type: square;
+  margin-left: $list-side-margin;
 }
 
 /* Ordered Lists */
@@ -150,11 +153,17 @@ dl {
 .content {
   padding: $padding-0 $padding-8;
   width: 100%;
+  @include small {
+    padding: 0 $padding-10;
+  }
 }
 
 .highlight {
-  font-size: $font-size-4xl;
-  color: $color-title;
+  font-size: $font-size-xl;
+  color: $color-teal-700;
+  @include small {
+    font-size: $font-size-2xl;
+  }
 }
 
 pre {
@@ -191,7 +200,7 @@ quote {
   border-left-width: 5px;
   display: block;
   padding: $padding-4;
-  background-color: rgba($color-blue-200, .3);
+  background-color: rgba($color-blue-200, 0.3);
 }
 
 .quote-source {
@@ -200,8 +209,17 @@ quote {
   font-size: $font-size-l;
 }
 
-section.content {
-  padding-top: $padding-16;
+.padding {
+  padding-top: $padding-10;
+  padding-bottom: $padding-10;
+}
+
+.border-top {
+  border-top: 1px solid $color-gray-200;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $color-gray-200;
 }
 
 @include large {

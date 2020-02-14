@@ -40,28 +40,22 @@ other = 'Asistentes'
 other = 'Comunidades'
 [Talks]
 other = 'Charlas'
-[LongSummary]
-other = 'Commit es una conferencia con ponentes españoles que incluye todos los aspectos del desarrollo IT, desde técnicas de desarrollo de software hasta Big Data, Cloud o ML. Se celebrará en la Universidad San Pablo CEU en Madrid, el 27-28 de Noviembre. '
-[BeHere]
-other = 'Vívelo'
-[BeHereShortDesc]
-other = 'No es lo mismo ver vídeos de un evento que vivir un evento.'
 [BeHereDesc]
-other = 'Cosas como "El próximo finde veo las charlas" o "Me propongo ver una charla al día, mientras almuerzo" es algo que todos hemos dicho alguna vez. Y rara vez lo cumplimos. Menos aún si hablamos de un evento de 140 charlas. Pero no es sólo eso. Conocer gente nueva, hablar con un ponente tras la charla, averiguar los perfiles que buscan empresas punteras en el país, son sólo algunos ejemplos de lo que puedes conseguir asistiendo a un evento. Y si te quedas en casa te puedes perder muchas de <a href="https://blog.commit-conf.com/un-commit-cualquiera/">las historias</a> que puedes vivir. No se trata sólo de ir a un evento, sino de vivir el evento.'
+other = '<h1>No se vive igual en video</h1><p class="highlight">Apuntarte la lista de charlas grabadas, y "el próximo fin de semana las veo", o "una charla al día, durante el almuerzo". Totalmente. En cuanto saques tiempo.</p><p>Commit no es sólo un evento de 140 charlas. Es conocer gente nueva con intereses similares, es hablar con el ponente tras la charla, es enterarse de lo que buscan las empresas punteras del país. Si te quedas en casa te pierdes la posibilidad de <a href="https://blog.commit-conf.com/un-commit-cualquiera/">crear tus propios recuerdos</a>. <b>No se trata sólo de asistir a un evento; se trata de vivir la experiencia</b>.</p><p itemprop="description">Commit es una conferencia con ponentes españoles que incluye todos los aspectos del desarrollo IT, desde técnicas de desarrollo de software hasta Big Data, Cloud o ML. Se celebrará en la Universidad San Pablo CEU en Madrid, el 27-28 de Noviembre.</p>'
 [WorkDoesNotDiscriminate]
-other = 'El trabajo no discrimina'
+other = 'Nuestro compromiso con la diversidad'
 [WorkDoesNotDiscriminateDesc]
-other = 'No es el trabajo el que discrimina. Al trabajo no le importa tu género, tu religión o con quién compartes tu vida. Lo que único que le importa es que se haga. Y que se haga bien. Lo demás, lo hacen las personas.'
+other = 'El trabajo no discrimina. Al trabajo no le importa tu género, tu religión o con quién compartes tu vida. Lo que único que le importa es que se haga. Y que se haga bien. Lo demás, lo hacen las personas.'
 [OurDiversityCommitments]
-other = 'Dar un paso atrás y ver si las cosas se hacen bien no es malo. Tampoco está mal intentar fomentar que la gente se plantee dar ese paso atrás. No se trata de imponer nada. Tan sólo es reflexionar si las cosas se pueden hacer mejor. Y como la diversidad en los eventos tecnológicos debería mejorar, hemos optado por dos iniciativas.'
+other = 'La diversidad en los eventos tecnológicos deja bastante espacio para la mejora. Por este motivo hemos decidido apoyar diferentes iniciativas para ayudar a corregir esto.'
 [TechShessionsDesc]
-other = 'Hace ya tres años arrancamos Tech SHEssions, un programa gratuito para ayudar a mujeres técnicas a superar el síndrome del impostor y participar más activamente en las comunidades. Todo con la ayuda de mentoras que las apoyan con su experiencia en un camino que ellas mismas han recorrido. Porque si vas a meterte en la selva, mejor llevar a una guía.'
+other = 'Tech SHEssions es un programa gratuito que arrancamos hace tres años para ayudar a mujeres técnicas a superar el síndrome del impostor y participar más activamente en las comunidades, apoyadas por mentoras que ya han recorrido ese mismo camino.'
 [ReadMoreOfTechSHEssions]
 other = 'Leer más sobre Tech SHEssions'
 [DiversityTickets]
 other = 'Entradas para la diversidad'
 [DiversityTicketsDesc]
-other = 'Para que un evento pueda mejorar la diversidad entre sus asistentes, creemos que es necesario prestar atención a todos aquellos grupos con menor representación en el mundo del desarrollo. No es sólo una cuestión de género. Por ello, si crees que perteneces a uno de estos grupos, te invitamos a solicitar una de las entradas que sacamos específicamente para vosotros.'
+other = 'La diversidad no es sólo una cuestión de género. Si eres miembro de un colectivo infrarrepresentado (incluyendo, pero no limitado a: no caucásicos, LGBTQIA+, mujeres y personas con discapacidad) puedes solicitar una de nuestras entradas gratuitas disponibles para la diversidad.'
 [DiversityTicketsDeadline]
 other = 'El plazo termina el 30 de septiembre.'
 [DiversityTicketsClosed]
@@ -95,7 +89,7 @@ other = 'Resumen de Commit 2019'
 [NewsletterTitle]
 other = 'Suscríbete a nuestra lista de correo'
 [NewsletterDesc]
-other = 'Recibe una notifiación cuando anunciemos cambios o publiquemos la agenda. Podrás desuscribirte de estas notificaciones en cualquier momento y no compartiremos tu información con terceras partes.'
+other = 'Recibe una notificación cuando anunciemos cambios o publiquemos la agenda. Podrás cancelar tu suscripción en cualquier momento, y no compartiremos tu información con terceras partes.'
 [NewsletterMore]
 other = 'Para más información, mira nuestra <a href="/cookies">Política de Privacidad</a>.'
 [NewsletterSubscribe]
@@ -219,9 +213,9 @@ other = 'Al ser más de dos mil personas, las posibilidades de customización so
 [OurSponsors]
 other = 'Nuestros patrocinadores'
 [OurSponsorsDesc]
-other = 'Commit es una oportunidad única para conectar con tu audiencia, posicionar tu marca y ser parte en las conversaciones que arrancan cuando hay equipos que descubren juntos nuevas maneras de crear software.'
+other = 'Commit es una oportunidad única para posicionar tu marca, conectar con tu audiencia y ser parte de las conversaciones que arrancan cuando hay equipos que descubren juntos nuevas maneras de crear software.'
 [BePartOfThem]
-other = 'Forma parte de ellos'
+other = 'Entrar en contacto'
 [AreYouInterested]
 other = '¿Estás interesado?'
 [OurNumbers]

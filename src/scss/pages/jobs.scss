@@ -1,5 +1,5 @@
 .job > ul {
-  @extend ul.square;
+  @extend .square;
 }
 
 .jobs {
@@ -31,7 +31,8 @@
   flex: 1;
 }
 
-.job-item-title, .salary {
+.job-item-title,
+.salary {
   font-size: $font-size-xl;
 }
 
@@ -39,7 +40,8 @@
   flex: 1;
 }
 
-.job-item-header, .job-item-details-container {
+.job-item-header,
+.job-item-details-container {
   @include medium {
     display: flex;
     flex-direction: row;
@@ -53,7 +55,8 @@
   margin-top: $margin-1;
 }
 
-.location, .tags {
+.location,
+.tags {
   display: inline;
   padding-right: $padding-2;
 }

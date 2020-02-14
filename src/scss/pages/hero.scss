@@ -92,15 +92,16 @@ $hero-color: $black;
     width: 100%;
     display: block;
     background-color: rgba($black, 0.5);
-
   }
   @include medium {
     position: relative;
     margin-right: -$margin-8;
     background-image: url("/img/background-large.webp");
+    //clip-path: polygon(50% 0%, 93% 8%, 100% 60%, 91% 100%, 6% 100%, 14% 62%, 2% 19%);
     &::before {
       background-color: transparent;
-      box-shadow: inset 0px 0px 5px 4px rgb(255, 255, 255);
+      background-image: url('/img/broken-wall.svg');
+      background-size: cover;
     }
   }
   _::-webkit-full-page-media, _:future, :root .safari_only {
