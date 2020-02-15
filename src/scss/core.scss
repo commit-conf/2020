@@ -131,6 +131,9 @@ dl {
 $list-side-margin: 2rem;
 ul {
   list-style-type: none;
+  font-size: $font-size-l;
+  line-height: $line-height-relaxed;
+  margin-bottom: $margin-6;
 }
 .square {
   list-style-type: square;

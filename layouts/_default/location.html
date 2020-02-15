@@ -2,11 +2,19 @@
   <section class="info zebra">
     <div class="content">
       <h1 class="lead">{{ i18n "Location" }}</h1>
+      <a href="https://goo.gl/maps/X5eoF" target="_blank">
+        <picture alt="Location of San Pablo CEU, Campus de Monteprincipe">
+          <source srcset="/img/location/map-small.webp" media="(max-width: 560px)" type="image/webp">
+          <source srcset="/img/location/map-medium.webp" type="image/webp">
+          <source srcset="/img/location/map-small.jpg" media="(max-width: 560px)" type="image/jpeg">
+          <source srcset="/img/location/map-medium.jpg" type="image/jpeg">
+          <img src="/img/location/map-medium.jpg" class="map-img" >
+        </picture> 
+      </a>
     </div>
     {{ range $.Site.Data.location }}
     <section>
       <div class="content">
-        <h2 class="info-title">{{ i18n .title }}</h2>
         {{ range .items }}
           <section>
             <h3 class="info-subtitle">{{ i18n .title}}</h3>

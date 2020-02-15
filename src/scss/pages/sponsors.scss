@@ -85,15 +85,19 @@ $sponsorsHeight: 60px;
 }
 
 .number-and-text {
-  display: flex;
   text-align: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   height: 100%;
-  color: #555;
   > .number {
     font-size: $font-size-4xl;
+    @include small {
+      //font-size: $font-size-6xl;
+    }
+  }
+  > .text {
+    font-size: $font-size-base;
+    @include small {
+      font-size: $font-size-xl;
+    }
   }
 }
 
@@ -143,6 +147,5 @@ $sponsorsHeight: 60px;
 }
 
 .graph-title {
-  padding-top: $padding-4;
-  font-variant: all-small-caps;
+  text-transform: uppercase;
 }

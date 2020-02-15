@@ -67,7 +67,7 @@ other = 'Solicita tu entrada'
 [OurCommunities]
 other = 'Nuestras comunidades'
 [OurCommunitiesDesc]
-other = 'Este evento sólo es posible gracias al contenido y esfuerzo aportado por nuestras comunidades. Aprovecha y asiste a alguno de sus meetups. ¡No te dejarán indiferente!'
+other = 'Este evento sólo es posible gracias al contenido y esfuerzo aportado por nuestras comunidades. Aprovecha y asiste a sus meetups para una experiencia diferente.'
 [AddYourComunity]
 other = '¿Falta tu comunidad? <a href="mailto:info@commit-conf.com">Contáctanos</a>'
 [KnowledgeIsPower]
@@ -119,7 +119,7 @@ other = 'Acreditaciones'
 [BadgesDesc]
 other = 'Seremos estrictos para el acceso a las charlas. Con esto en mente, en el registro se te dará:'
 [WristbandDesc]
-other = '<p><b>Una pulsera</b>: Esta pulsera deberá mostrarse cuando alguien de la organización lo solicite en las puerta de las aulas y para la entrega de la comida, y llevarse puesta durante todo el evento. Ni en el bolsillo, ni en la mochila, ni en casa.</p><p><b>Si no se tiene la pulsera, la organización se reserva el derecho de impedir el acceso a las charlas</b>. </p><p>Si quieres usar una misma entrada para que una persona vaya el primer día y otra diferente el segundo, dilo en el mostrador de información antes de irte del evento y nos encargaremos de cortar tu pulsera y darte otra para el día siguiente.</p>'
+other = '<p><b>Una pulsera</b>: Esta pulsera deberá mostrarse cuando alguien de la organización lo solicite en las puerta de las aulas y para la entrega de la comida, y llevarse puesta durante todo el evento. Ni en el bolsillo, ni en la mochila, ni en casa. <b>Si no se tiene la pulsera, la organización se reserva el derecho de impedir el acceso a las charlas</b>. </p><p>Si quieres usar una misma entrada para que una persona vaya el primer día y otra diferente el segundo, dilo en el mostrador de información antes de irte del evento y nos encargaremos de cortar tu pulsera y darte otra para el día siguiente.</p>'
 [BadgeDesc]
 other = '<b>Un badge</b>: El único cometido de los badges es facilitar el networking. No es obligatorio llevarlo, pero ayuda a conocer gente.'
 [AccessControl]
@@ -261,7 +261,7 @@ other = 'Edición'
 [AttendeesExperience]
 other = 'Experiencia de los asistentes'
 [AttendeesJobRoles]
-other = 'Perfil de los asistentes'
+other = 'Perfil profesional de los asistentes'
 [years]
 other = 'años'
 [Students]

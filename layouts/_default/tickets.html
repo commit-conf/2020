@@ -6,21 +6,21 @@
       <p class="text-center">
         <a class="button primary" href="https://www.koliseo.com/events/commit-2020">{{i18n "BuyTickets"}}</a>
       </p>
-      <section class="info">
-        <h2>{{i18n "Info"}}</h2>
-        {{ range $.Site.Data.tickets }}
-        <section>
-          <h3>{{ i18n .title }}</h3>
-          {{ range .items }}
-            {{ if .content }}
-              {{ partial "print.html" .content }}
-            {{ else }}
-              {{ partial .template . }}
-            {{ end }}
-          {{ end }}
-        </section>
-        {{ end }}
-      </section>
     </div>
+  </section>
+  <section class="info content">
+    <h1>{{i18n "Info"}}</h1>
+    {{ range $.Site.Data.tickets }}
+    <div>
+      <h3>{{ i18n .title }}</h3>
+      {{ range .items }}
+        {{ if .content }}
+          {{ partial "print.html" .content }}
+        {{ else }}
+          {{ partial .template . }}
+        {{ end }}
+      {{ end }}
+    </div>
+    {{ end }}
   </section>
 {{ end }}
