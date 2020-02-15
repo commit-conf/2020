@@ -107,14 +107,22 @@ iframe.youtube-player {
 
 // From here, we have all the background layout with animations and everything
 
+.bg-theme-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: -10;
+}
 .bg-theme {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  overflow: hidden;
-  z-index: -10;
 }
 
 $bg-circle-border: 2px;
