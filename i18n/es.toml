@@ -102,6 +102,8 @@ other = 'Recinto'
 other = 'Dirección'
 [VenueLocation]
 other = 'Estamos en la Universidad San Pablo CEU, Campus de Montepríncipe. Boadilla del monte, Madrid · <a target="_blank" href="https://goo.gl/maps/X5eoF" rel="noopener noreferrer" class="location-link" itemprop="url">Abrir en Google Maps</a>.'
+[MapTitle]
+other = 'Haz clic para abrir la localización en Google Maps'
 [HowToGetThere]
 other = 'Cómo llegar'
 [TransportOptionsDesc]
