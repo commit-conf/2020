@@ -6,8 +6,6 @@ other = 'Commit es el evento que junta a todas las comunidades de desarrolladore
 # Menu
 [Tickets]
 other = 'Entradas'
-[Help]
-other = 'Ayuda'
 [Sponsors]
 other = 'Patrocinadores'
 
@@ -55,7 +53,7 @@ other = 'Leer más sobre Tech SHEssions'
 [DiversityTickets]
 other = 'Entradas para la diversidad'
 [DiversityTicketsDesc]
-other = 'La diversidad no es sólo una cuestión de género. Si eres miembro de un colectivo infrarrepresentado (incluyendo, pero no limitado a: no caucásicos, LGBTQIA+, mujeres y personas con discapacidad) puedes solicitar una de nuestras entradas gratuitas disponibles para la diversidad.'
+other = 'La diversidad no es sólo una cuestión de género. Si eres miembro de un colectivo infrarrepresentado (incluyendo, pero no limitado a: no caucásicos, LGBTQIA+, mujeres y personas con discapacidad) puedes solicitar una de nuestras entradas disponibles para la diversidad.'
 [DiversityTicketsDeadline]
 other = 'El plazo termina el 30 de septiembre.'
 [DiversityTicketsClosed]
