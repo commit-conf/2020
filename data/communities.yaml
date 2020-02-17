@@ -3,35 +3,25 @@
 - name: Agile Aragon
   href: https://agile-aragon.org/
   logo:
-    file: Agile-Aragon.png
+    file: Agile-Aragon.jpg
 - name: AsturiasHacking
   href: https://www.meetup.com/AsturiasHacking/
-  logo:
-    type: jpg
 - name: Betabeers Madrid
   href: http://betabeers.com
 - name: Big Girls Theory
   href: https://biggirlstheory.es/
-  logo:
-    type: jpg
 - name: CanariasJS
   href: https://jsdaycanarias.com/
   logo:
     type: svg
 - name: CATzure
   href: https://www.meetup.com/es-ES/CATzure/
-  logo:
-    type: jpg
 - name: CrossDevelopment-Madrid
   href: http://www.xdevmadrid.es/
-  logo:
-    type: jpg
 - name: Docker Madrid
   href: https://www.meetup.com/es-ES/Docker-Madrid/
 - name: dotnetMalaga
   href: http://dotnetmalaga.es/
-  logo:
-    type: jpg
 - name: DotNetters
   href: http://dotnetters.es
 - name: Facebook Developer Circle Madrid
@@ -42,14 +32,10 @@
   href: https://femdevs.es/
 - name: Frontend Developers Madrid
   href: https://www.meetup.com/es-ES/Front-end-Developers-Madrid/
-  logo:
-    type: jpg
 - name: GDG`s
   href: http://www.gdg.es
 - name: GeoDevelopers
   href: http://meetup.com/Geo-Developers/
-  logo:
-    type: jpg
 - name: Girls in Tech Spain
   href: https://spain.girlsintech.org/
 - name: HackathonLovers
@@ -66,16 +52,12 @@
   href: http://www.javahispano.org/
 - name: Madriagil
   href: https://www.meetup.com/es-ES/madriagil/
-  logo:
-    type: jpg
 - name: Madrid Android Developer Group
   href: https://www.meetup.com/madrid-android-dev-group/
 - name: Madrid Spring User Group
   href: https://www.meetup.com/madrid-spring-user-group/
 - name: Madrid SUG
   href: https://www.meetup.com/MadridSUG
-  logo:
-    type: jpg
 - name: Madrid |> Elixir
   href: https://www.meetup.com/Madrid-Elixir/
 - name: MadridDotNet
@@ -86,8 +68,6 @@
   href: https://www.meetup.com/es-ES/MadridJUG/
 - name: MadridScala
   href: https://www.meetup.com/Scala-Programming-Madrid/
-  logo:
-    type: jpg
 - name: madrid.rb
   href: http://madridrb.com
 - name: Madrid-GUG
@@ -114,8 +94,6 @@
     type: svg
 - name: Rioja{dotnet}
   href: http://www.riojadotnet.com/
-  logo:
-    type: jpg
 - name: STCAsturias
   href: https://twitter.com/STCAsturias
 - name: SUG.CAT
@@ -128,5 +106,3 @@
   href: https://www.meetup.com/VueJS-Madrid/
 - name: XantarDev
   href: https://xantardev.org
-  logo:
-    type: jpg

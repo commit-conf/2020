@@ -19,7 +19,8 @@ function optimize({ sourceDir, size }) {
         console.log("Optimizing image " + file);
         let destinationFilename = file
           .replace("[^a-zA-Z0-9]+", "-")
-          .replace(".jpeg", ".jpg");
+          .replace(".jpeg", ".jpg")
+          .replace(".png", ".jpg");
         if (file.endsWith(".svg")) {
           try {
             const data = fs.readFileSync(`${sourceDir}/${file}`, "utf8");
@@ -37,12 +38,34 @@ function optimize({ sourceDir, size }) {
             console.log(error);
           }
         } else {
-          let result = sharp(`${sourceDir}/${file}`).resize(size, undefined);
+          let result = sharp(`${sourceDir}/${file}`)
+            .resize(size, undefined, {
+              withoutEnlargement: true
+            })
+            .jpeg()
+            .flatten({ background: { r: 255, g: 255, b: 255 } });
           result
+            .clone()
             .toBuffer()
             .then(data => {
               fs.writeFileSync(
                 `${destinationDir}/${destinationFilename}`,
+                data
+              );
+            })
+            .catch(err => {
+              console.log(err);
+            });
+          result
+            .clone()
+            .webp({ quality: 65 })
+            .toBuffer()
+            .then(data => {
+              fs.writeFileSync(
+                `${destinationDir}/${destinationFilename.replace(
+                  ".jpg",
+                  ".webp"
+                )}`,
                 data
               );
             })
@@ -59,12 +82,10 @@ function optimize({ sourceDir, size }) {
 return Promise.all([
   optimize({
     sourceDir: "static/img/communities/original",
-    size: 240,
-    avatar: false
+    size: 240
   }),
   optimize({
     sourceDir: "static/img/sponsors/original",
-    size: 240,
-    avatar: false
+    size: 240
   })
 ]);

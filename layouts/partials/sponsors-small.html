@@ -16,7 +16,15 @@
                 <a href="{{.href | safeURL }}" itemprop="url" title="{{.name}}" class="sponsor {{$normalizedCategoryName}}" target="_blank" rel="noopner noreferrer">
                   <meta itemprop="name" content="{{.name}}">
                   <meta itemprop="logo" content="{{ print "/img/sponsors/" $logo | absURL }}">
-                  <img src="/img/sponsors/{{$logo}}" alt="{{.name}}" class="sponsor-img {{$normalizedName}}">
+                  {{ if strings.HasSuffix $logo "svg" }}
+                    <img src="/img/sponsors/{{$logo}}" loading="lazy" alt="{{.name}}" class="sponsor-img {{$normalizedName}}">
+                  {{ else }}
+                    <picture>
+                      <source srcset="/img/sponsors/{{replace $logo ".jpg" ".webp"}}" type="image/webp">
+                      <source srcset="/img/sponsors/{{$logo}}" type="image/jpeg">
+                      <img src="/img/sponsors/{{$logo}}" loading="lazy" alt="{{.name}}" class="sponsor-img {{$normalizedName}}">
+                    </picture>
+                  {{ end }}
                 </a>
               </div>
             {{ end }}

@@ -5,16 +5,24 @@
   <div class="communities">
     {{ range $.Site.Data.communities }}
     {{ $normalizedName := .name | replaceRE "[^a-zA-Z0-9]+" "-" }}
-    {{ $logo := cond (isset . "logo") (cond (isset .logo "file") .logo.file (printf "%s.%s" $normalizedName .logo.type)) (printf "%s.png" $normalizedName) }}
+    {{ $logo := cond (isset . "logo") (cond (isset .logo "file") .logo.file (printf "%s.%s" $normalizedName .logo.type)) (printf "%s.jpg" $normalizedName) }}
     <a
       href="{{.href | safeURL }}"
       target="_blank"
       class="community {{$normalizedName}}"
       title="{{.name}}"
       rel="noopener noreferrer"
-      style='background-image: url("/img/communities/{{$logo}}");'
-      >{{.name}}</a
-    >
+      >
+        {{ if strings.HasSuffix $logo "svg" }}
+          <img src="/img/communities/{{$logo}}" loading="lazy" alt="{{.name}}" class="community-logo {{$normalizedName}}">
+        {{ else }}
+          <picture>
+            <source srcset="/img/communities/{{replace $logo ".jpg" ".webp"}}" type="image/webp">
+            <source srcset="/img/communities/{{$logo}}" type="image/jpeg">
+            <img src="/img/communities/{{$logo}}" loading="lazy" alt="{{.name}}" class="community-logo {{$normalizedName}}">
+          </picture>
+        {{ end }}
+    </a>
     {{ end }}
   </div>
   <div><small>{{i18n "AddYourComunity" | safeHTML}}</small></div>
