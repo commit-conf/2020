@@ -116,21 +116,23 @@ window.onload = function() {
 // blatantly copied form https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event
 let last_known_scroll_position = 0;
 let ticking = false;
-const bg = document.querySelector('.bg-theme');
+const bg = document.querySelector(".bg-theme");
 
-function doSomething(scroll_pos) {
-  // Do something with the scroll position
-}
+window.addEventListener(
+  "scroll",
+  function(e) {
+    last_known_scroll_position = window.scrollY;
 
-window.addEventListener('scroll', function(e) {
-  last_known_scroll_position = window.scrollY;
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        bg.style.transform = `translateY(${Math.floor(
+          last_known_scroll_position / 1.5
+        )}px)`;
+        ticking = false;
+      });
 
-  if (!ticking) {
-    window.requestAnimationFrame(function() {
-      bg.style.transform = `translateY(${Math.floor(last_known_scroll_position / 1.5)}px)`; 
-      ticking = false;
-    });
-
-    ticking = true;
-  }
-}, { passive: true });
+      ticking = true;
+    }
+  },
+  { passive: true }
+);

@@ -22,14 +22,12 @@
     "svgo": "^1.3.2"
   },
   "scripts": {
-    "compile:css": "sass src/scss/main.scss --style compressed | postcss -o static/css/main.css",
     "compile:jobs": "bin/create-job",
     "test": "npm build && concurrently --kill-others --success first \"hugo server\" \"blc http://localhost:1313 -ro\"",
     "postversion": "git push && git push --tags",
-    "watch:css": "npm run compile:css && inotifywait -m -r -e modify,create,delete ./src/scss/ | while read NEWFILE; do npm run compile:css; done",
     "watch:jobs": "npm run compile:jobs && inotifywait -m -r -e modify,create,delete ./src/jobs/ | while read NEWFILE; do npm run compile:jobs; done",
-    "watch": "concurrently \"npm run watch:css\" \"npm run watch:jobs\" \"hugo server --log --bind=0.0.0.0\" \"xdg-open http://localhost:1313/\"",
-    "build": "npm run compile:css && npm run compile:jobs && hugo"
+    "watch": "concurrently \"npm run watch:jobs\" \"hugo server --log --bind=0.0.0.0\" \"xdg-open http://localhost:1313/\"",
+    "build": "npm run compile:jobs && hugo"
   },
   "browserslist": [
     "last 2 version",

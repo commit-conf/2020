@@ -2,7 +2,7 @@ The source code of Commit Conf 2020. This project contains the source code of a 
 
 ```bash
 # Install hugo
-snap install hugo
+snap install hugo --channel=extended
 # do not use apt-get - it has an old version of hugo
 
 # Install node depenedencies

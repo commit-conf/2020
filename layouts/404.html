@@ -17,6 +17,9 @@
   </div>
   {{ end }}
 </section>
-{{ end }} {{ define "js" }}
-<script src="/js/random-entry.js" defer></script>
+{{ end }} 
+{{ define "js" }}
+  {{ $random := resources.Get "js/random-entry.js" }}
+  {{ $js := $random | resources.Minify | fingerprint }}
+  <script src="{{ $js.Permalink }}" defer></script>
 {{ end }}

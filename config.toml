@@ -3,6 +3,7 @@ DefaultContentLanguage = "es"
 copyright = "Apache License 2.0"
 sectionPagesMenu = "main"
 pygmentsUseClasses=true
+disableHugoGeneratorInject = true
 disableKinds=["RSS","sitemap"]
 Title = 'Commit Conf 2020'
 
