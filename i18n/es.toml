@@ -175,7 +175,7 @@ other = 'No, sólo se podrán comprar las entradas en Koliseo hasta que se acabe
 [TransferOrModifyTicketData]
 other = 'Quiero ceder o cambiar algún dato de mi entrada'
 [ModifyTicketData]
-other = 'Si necesitas cambiar datos de tu entrada, como el nombre o la talla de camiseta, puedes hacerlo accediendo a la página de tu entrada y editando allí mismo los datos. Ciertos datos (como la talla de camiseta o tipo de comida) serán consultados por la organización antes del día del evento, así que mejor no apures demasiado para cambiar los datos.'
+other = 'Si necesitas cambiar datos de tu entrada, como el nombre o la talla de camiseta, puedes hacerlo accediendo a la página de tu entrada y editando allí mismo los datos. La organización consultará ciertos datos (como la talla de camiseta o tipo de comida) antes del día del evento, así que mejor no apures demasiado para cambiar los datos.'
 [TransferTicket]
 other = 'Si lo que quieres es directamente transferirle tu entrada a otro usuario de Koliseo, ponte en contacto con <a href="mailto:info@commit-conf.com" target="_blank">la organización</a> indicando el nombre de usuario de Koliseo de la persona a la que quieres transferirle la entrada.'
 [TicketInvoice]
