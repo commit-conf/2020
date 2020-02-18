@@ -159,7 +159,7 @@ other = 'Cada ponente indicará en la agenda los requisitos para asistir a su wo
 [Cloakroom]
 other = '¿Habrá guardarropa?'
 [CloakroomDesc]
-other = 'Disponemos de un espacio para guardar tu abrigo, casco o maleta. El guardarropa estará vigilado todo el tiempo por la organización y los voluntarios. Aún así, <b>ni Commit ni la Universidad se hacen responsables de tus pertenencias</b>.'
+other = 'Disponemos de un espacio para guardar tu abrigo, casco o maleta. La organización y los voluntarios vigilarán el guardarropa todo el tiempo. Aún así, <b>ni Commit ni la Universidad se hacen responsables de tus pertenencias</b>.'
 
 # Tickets
 [Info]
