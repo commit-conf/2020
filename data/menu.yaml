@@ -1,6 +1,0 @@
-- name: Tickets
-  url: /tickets
-- name: Location
-  url: /location
-- name: Sponsors
-  url: /sponsors

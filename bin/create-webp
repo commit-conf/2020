@@ -1,8 +1,0 @@
-#!/bin/bash
-
-# see options at https://www.npmjs.com/package/sharp-cli
-INPUT=$1
-OUTPUT=${INPUT/.png/.webp}
-OUTPUT=${OUTPUT/.jpg/.webp}
-
-./node_modules/sharp-cli/bin/cli.js -i $INPUT -o $OUTPUT -mq65
