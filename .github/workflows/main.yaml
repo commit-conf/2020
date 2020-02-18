@@ -36,7 +36,7 @@ jobs:
       # install node dependencies
       - run: npm i
       # compile
-      - run: npm run compile:css
+      - run: npm run compile:jobs
       - name: hugo
         uses: klakegg/actions-hugo@1.0.0
         with:
