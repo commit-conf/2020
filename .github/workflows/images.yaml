@@ -1,0 +1,46 @@
+name: Images optimization
+
+on:
+  push:
+    branches: 
+      - "master"
+    paths:
+      - "static/img/sponsors/original/**"
+      - "static/img/communities/original/**"
+
+jobs:
+  build:
+    name: Optimize sponsors and communities logos
+    runs-on: ubuntu-latest
+    steps:
+      # you must check out the repository
+      - uses: actions/checkout@v2
+      # setup node
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      # add npm cache
+      - uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      # install node dependencies
+      - run: npm i
+      # optimize images
+      - run: ./bin/optimize-images
+      - name: Setup git user
+        run: |
+            git config --global user.name "$(git --no-pager log --format=format:'%an' -n 1)"
+            git config --global user.email "$(git --no-pager log --format=format:'%ae' -n 1)"
+      # BUG: action will not launch another actions if we used the default checkout token
+      - name: Configure CI credentials
+        env:
+          GH_PAGES_DEPLOY_KEY: ${{ secrets.GH_PAGES_DEPLOY_KEY }}
+        run: ./bin/configure-ci
+      - name: commit
+        run: |
+          git add -A
+          git commit -m "CI - Images optimization"
+          git push
