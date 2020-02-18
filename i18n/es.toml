@@ -211,7 +211,7 @@ other = '¿Necesito inscribirme a las charlas para poder asistir?'
 [TicketsAllowsToAttendAnyTalk]
 other = 'No es necesario inscribirse a las charlas. Tu entrada te permite asistir a cualquier charla o taller. A pesar de distribuir de la mejor forma posible las charlas en las aulas, algunas se llenarán más que otras y podrías no encontrar sitio en la charla que querías ver.'
 [HelpUsWithTalkLikes]
-other = 'Para ayudarnos a saber las charlas que van a tener más audiencia, <b>puedes indicar en la página de la agenda a qué charlas querrías asistir</b>. Las charlas más votadas se asignarán a las salas más grandes. <a href="https://twitter.com/commitconf/status/1044880810069938176" target="_blank">Aquí</a> tienes un tweet explicando cómo puedes ayudarnos.'
+other = 'Para ayudarnos a saber las charlas que van a tener más audiencia, <b>puedes indicar en la página de la agenda a qué charlas querrías asistir</b>. Asignaremos las charlas más votadas a las salas más grandes. <a href="https://twitter.com/commitconf/status/1044880810069938176" target="_blank">Aquí</a> tienes un tweet explicando cómo puedes ayudarnos.'
 [IsMealIncluded]
 other = '¿La comida está incluida o tendré que llevarla?'
 [MealIsIncluded]
