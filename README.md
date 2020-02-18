@@ -1,9 +1,8 @@
-The source code of Commit Conf 2020. This project contains the source code of a website based on [hugo](https://github.com/gohugoio) and [node-sass](https://github.com/sass/node-sass). 
+The source code of Commit Conf 2020. This project contains the source code of a website based on [hugo](https://github.com/gohugoio) and sass. 
 
 ```bash
-# Install hugo
+# Install hugo -- do not use apt-get, that's an old version 
 snap install hugo --channel=extended
-# do not use apt-get - it has an old version of hugo
 
 # Install node depenedencies
 npm i
@@ -16,90 +15,83 @@ npm run test
 
 # Build the documentation and save the generated HTML and CSS into /public
 npm run build
-```
 
-To deploy, we use the contents located on `/public`
-
-```bash
 # Deploy on GitHub Pages
 bin/deploy
 ```
 
-## Things you should know
+## To publish small changes
 
-### To publish small changes
+There are three main locations to visit in order to make changes on the website:
 
-If you only want to do small changes on the website, you have 3 ways to do it:
+- [i18n folder](i18n) contains most of the text contents of the website, just search for the entry you are interested in, and modify it.
 
-- Modify the [i18n](i18n) files. Most of the texts are from this file. Just search for the text you want to change and update it.
+- [data folder](data) contains several YAML files with the menu elements, i18n entries from the terms and conditions, and job offers.
 
-- Modify the [data](data) files. In this directory, you have lot of YAML files. You can change the order of some menu elements, add i18n entries to the terms and conditions, add job offers.
+- [config.toml](config.toml), which sets the links for C4P, Agenda, photos, videos, etc (look for the `Params` section). Remember to read the documentation on the file before updating anything.
 
-- Modify the [config.toml](config.toml) file. Here you can change the `Params` section, where you define the links for C4P, Agenda, photos, videos, etc. You have more info in this file, but remember to read the documentation of the file before updating anything.
+## Data files
 
-### Data files
+The [data folder](data) holds several files:
 
-The [data](data) directory has lots of files. Here you see each one goal:
+- [menu.yaml](data/menu.yaml): Links used for the top bar of the site. Additionally, it includes a link to change the language and another to the agenda (if a value was specified in [config.toml](config.toml)).
 
-- [menu.yaml](data/menu.yaml): Links used for the top bar of the site. Additionally, we always add a language link and the link for the agenda (if we specify it at [config.toml](config.toml)).
+- [footer.yaml](data/footer.yaml): links in the footer. Set a `i18n: false` attribute to not translate the text contents. It doesn't matter if it is a relative or absolute link. Add an `absolute: true` entry if you find an external link that does not work (for example, with `mailto:` links), .
 
-- [footer.yaml](data/footer.yaml): Here we specify the first footer links. Specify a `i18n: false` attribute to not translate an item. Usually, links just work (I mean, it doesn't matter if it is a relative link or an absolute link). If an external link does not work (for example, "mailto" links), add an `absolute: true` entry.
+- [location.yaml](data/location.yaml): the i18n entries we use to create the location page. `title` and `content` keys specify i18n entries to use. **Advanced**: If you need to include a very complex HTML, you can specify a `template` key and the path to a partial file.
 
-- [location.yaml](data/location.yaml): Here you have the i18n entries we use to create the location page. `title` and `content` keys specify i18n entries to use. **Advanced**: If you need to include a very complex HTML, you can specify a `template` key and the path to a partial file.
-
-- [tickets.yaml](data/tickets.yaml): It works like the location file, but this is for the tickets page.
+- [tickets.yaml](data/tickets.yaml): like `location.yaml`, but for the tickets page.
 
 - [terms.yaml](data/terms.yaml): i18n entries to use in the Terms and Conditions page.
 
-- [stats.yaml](data/stats.yaml): The stats to show on the homepage. As always, the `name` is a key of the i18n files.
+- [stats.yaml](data/stats.yaml): The stats to show on the homepage. `name` is a key to use with the i18n files.
 
-- [communities.yaml](communities.yaml): Communities list. Logos must be uploaded to [static/img/communities/original]. In this file, you must specify, for each community:
-  - `name`: Required. The name of the community
-  - `href`: Required. The homepage of the community
-  - `logo`: Optional. If no logo entry is specified, we assume there is a jpg logo with the file name extracted from the community name. For example, if the community name is "Otaku Lovers", we assume the community logo filename is "otaku-lovers.jpg". 
-    - `type`: Optional. To search using the default filename but with a different file type ('svg', for example). 
-    - `file`: Optional. To specify the full logo filename here (with extension).
+- [communities.yaml](communities.yaml): Communities list. The logos must be saved to [static/img/communities/original]. For each community you must specify:
+  - `name`: The name of the community (required)
+  - `href`: The homepage of the community (required)
+  - `logo`: If no logo entry is specified, we assume there is a jpg logo with the (lowercase, dasherized) community name. For example, if the community name is "Otaku Lovers", we assume the community logo filename is "otaku-lovers.jpg" (optional)
+    - `type`: Use this attribute to search for the filename with a different file type, like 'svg' (optional)
+    - `file`: To specify the full logo filename including the extension (optional)
 
-- [sponsors.yaml](data/sponsors.yaml): Like the communities file, but for sponsors and inside categories. This time the logos must be inside [static/img/sponsors/original](static/img/sponsors/original). You only need to wrap the same communities behavior and syntax inside each category:
-  - `name`: Required. The category name (e.g., Gold, Silver).
-  - `items`: Required. List of sponsors inside this category (following the same structure of the communities file)
+- [sponsors.yaml](data/sponsors.yaml): Like the communities file, but for sponsors and their categories. The logos must be saved to [static/img/sponsors/original](static/img/sponsors/original). 
+  - `name`: The category name, like Gold or Silver (required)
+  - `items`: List of sponsors inside this category, following the same structure of `communities.yaml` (required)
 
 - [jobs.yaml](data/jobs.yaml): Job offers of the sponsors. For each list item, you need to specify:
-  - `sponsor`: Required. The same sponsor name as in [data/sponsors.yaml](sponsors.yaml) file.
+  - `sponsor`: Required. The sponsor name as defined in [data/sponsors.yaml](sponsors.yaml) file.
   - `title`: Required. The job role.
   - `salary`: Required. The salary range. Example: 10K-18K
   - `location`: Required. The location. Example: Madrid, Spain
   - `tags`: Required. A list of tags to describe the job offer. Example: [senior, Java, TDD, Scrum, Devops]
   - `template`: Required. The markdown file with the job offer content. This file should be inside the [src/jobs](src/jobs) folder. Example: commit/senior-otaku-lover.md
 
-- [c4v.yaml](data/c4v.yaml): Content of the Call for Volunteers page. Just follow the pattern of the file.
+- [c4v.yaml](data/c4v.yaml): Content of the Call for Volunteers page. Just follow the pattern on the file.
 
 - [team.yaml](data/team.yaml): Content of the team page.
 
-- FYI: On the [404' page](layouts/404.html) we show a random entry of the [helloworld.json](data/helloworld.json) file. Maybe you want to add more entries.
+- FYI: On the [404' page](layouts/404.html) we show a random entry from [helloworld.json](data/helloworld.json) file. Maybe you want to add more entries.
 
-### Prepared updates
+## Updating contents
 
-#### C4P
+### C4P
 
-Once you want to publish the C4P, just fill the `C4PLink` of the [config.toml](config.toml) file. It shows a button on the homepage and changes the style of the tickets button.
+To publish the C4P, just fill in the `C4PLink` in [config.toml](config.toml). The homepage will display a button and change the style of the tickets button.
 
-#### Agenda
+### Agenda
 
-Just update the `AgendaLink` of the [config.toml](config.toml) file. It will:
-  - Add a link on the top bar menu.
+Just update the `AgendaLink` in [config.toml](config.toml) to:
+
+  - Add a link to the top bar menu.
   - Add a button on the homepage and change the style of the tickets button.
-  - Hide the C4P button if the `C4PLink` is still specified.
+  - Hide the C4P button if `C4PLink` is still specified.
 
-#### Sponsors
+### Sponsors
 
-If there are no sponsors in the YAML file, it shows no current sponsors section on the sponsors' page. 
+The sponsors section will be empty, both on the home and the sponsors page, if the number of sponsors in `sponsors.yaml` is below the value defined for `minSponsorsCountForHome` in [config.toml](config.toml).
 
-We show a small section on the homepage. This section shows the list of sponsors (independently of the category, all with the same size) once we reach 4 sponsors (of any type, except collaborators). You can change this limit at [config.toml](config.toml).
+### Job offers
 
-#### Job offers
-
-We show no link anywhere until we have something in the YAML file. Once we have it, we show a section on the sponsors' page to link to the job offers page.
+The jobs section in the sponsors page will be hidden if there are no job offers defined.
 
 #### Call for volunteers
 
