@@ -82,6 +82,16 @@ other = 'Información del recinto'
 other = 'Información de las entradas'
 [PreviousEditionSummary]
 other = 'Resumen de Commit 2019'
+[PreviousEdition]
+other = 'En la anterior edición'
+[TheBestOf2019]
+other = 'En 2019 tuvimos muchas charlas. Mientras esperas a que llegue la fecha del evento puedes aprovechar y ver alguno de los vídeos.'
+[ViewMoreOf2019]
+other = 'Ver más vídeos de 2019'
+[ClickToPlay]
+other = 'Haz clic para reproducir la grabación de {{.Count}}'
+[ViewMoreVideos]
+other = "Ver más vídeos"
 
 # Newsletter
 [NewsletterTitle]

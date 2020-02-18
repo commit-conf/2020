@@ -84,15 +84,17 @@
           {{ end }}
         </div>
         <div class="youtube-player-container text-center">
-          <iframe title="{{i18n "PreviousEditionSummary"}}" class="youtube-player" width="560" height="315" src="https://www.youtube-nocookie.com/embed/-ACLrI0a1ok" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          {{ partial "youtube-video.html" (dict "title" (i18n "PreviousEditionSummary") "id" "-ACLrI0a1ok") }}
         </div>
       </div>
     </section>
   </div>
 
   {{ partial "sponsors-small.html" . }}
-
+  
   {{ partial "diversity.html" . }}
+
+  {{ partial "2019.html" . }}
   
   {{ partial "communities.html" . }}
 

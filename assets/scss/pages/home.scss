@@ -50,49 +50,11 @@
 }
 
 .youtube-player-container {
-  margin: $margin-8 $margin-0;
+  margin: $margin-8 auto $margin-0;
+  max-width: 500px;
   @include large {
-    margin: $margin-0;
-  }
-}
-
-iframe.youtube-player {
-  max-width: 100%;
-}
-
-.blurred {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @include medium {
-    &::before {
-      display: block;
-      content: '';
-      height: 100%;
-      position: absolute;
-      width: 100%;
-      box-shadow: inset 0px 0px 5px 4px rgb(255, 255, 255);
-    }
-  }
-}
-
-.knowledge-content {
-  > .bacon {
-    margin-bottom: $margin-8;
-    @include medium {
-      margin-left: -8rem;
-      margin-bottom: 0;
-    }
-  }
-  @include medium {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    column-gap: $gap-margin;
-    align-items: center;
-  }
-  @include large {
-    grid-template-columns: 0.8fr 1fr;
+    margin: 0;
+    max-width: 100%;
   }
 }
 
@@ -102,6 +64,42 @@ iframe.youtube-player {
     grid-template-columns: 1fr 1fr;
     gap: $gap-margin;
     margin-top: $margin-12;
+  }
+}
+
+.previous-edition {
+  display: grid;
+  grid-gap: 1rem;
+  grid-auto-rows: 1fr;
+  justify-content: center;
+  //grid-auto-columns: minmax(80%, 400px);
+  grid-template-columns: repeat(2, minmax(50%, 560px));
+  @include medium {
+    grid-template-columns: repeat(4, 25%)
+  }
+  > .video-preview .video-preview-title {
+    -webkit-line-clamp: 2;
+    padding: $padding-0 $padding-2;
+  }
+}
+
+.previous-edition-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color-gray-400;
+  background-color: $color-gray-100;
+  padding: $padding-4;
+  font-size: $font-size-l;
+  max-width: 100%;
+  text-align: center;
+  transition: background-color .2s ease-out;
+  @include medium {
+    width: 100%;
+    font-size: $font-size-xl;
+  }
+  &:hover, &:focus {
+    background-color: $color-gray-300;
   }
 }
 

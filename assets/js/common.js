@@ -112,11 +112,38 @@ window.onload = function() {
   }, 500);
 };
 
+// YouTube
+var youtubeVideos = document.querySelectorAll(".video-preview-hover");
+Array.prototype.forEach.call(youtubeVideos, function(item) {
+  item.addEventListener("click", function(e) {
+    try {
+      var parent = e.currentTarget.parentElement;
+      if (!parent.classList.contains("playing")) {
+        var dataset = e.currentTarget.dataset;
+        var id = dataset.id;
+        var title = dataset.title;
+        // we can use ES6 template, but we use strings to not break things in old browsers because of that
+        var iframe =
+          '<iframe title="' +
+          title +
+          '" class="video-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/' +
+          id +
+          '?autoplay=1&modestbranding=1&rel=0&wmode=transparent" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        parent.classList.add("playing");
+        var container = document.createElement("div");
+        container.innerHTML = iframe;
+        parent.appendChild(container.firstElementChild);
+      }
+      e.preventDefault();
+    } catch (error) {}
+  });
+});
+
 // scroll background with page
 // blatantly copied form https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event
-let last_known_scroll_position = 0;
-let ticking = false;
-const bg = document.querySelector(".bg-theme");
+var last_known_scroll_position = 0;
+var ticking = false;
+var bg = document.querySelector(".bg-theme");
 
 window.addEventListener(
   "scroll",
