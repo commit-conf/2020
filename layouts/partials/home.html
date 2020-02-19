@@ -2,8 +2,8 @@
   <meta itemprop="url" content="https://www.koliseo.com/events/commit-2020">
   <meta itemprop="image" content="{{ "/img/background.jpg" | absURL }}">
   <div class="content" itemprop="location" itemscope itemtype="http://schema.org/Place">
-    <meta itemprop="name" content="Universidad San Pablo CEU">
-    <meta itemprop="address" content="Universidad San Pablo CEU, Campus de Montepríncipe. Boadilla del monte, Madrid">
+    <meta itemprop="name" content="Universidad CEU San Pablo">
+    <meta itemprop="address" content="Universidad CEU San Pablo, Campus de Montepríncipe. Boadilla del Monte, Madrid">
     <meta itemprop="url" content="https://goo.gl/maps/X5eoF">
   </div>
   <div class="hero content">
@@ -26,7 +26,7 @@
           {{ else }}
             <a class="button small primary" href="{{$.Site.Params.C4PLink}}" target="_blank">
               Call for papers
-              <span class="button-small">{{ i18n "SendYourTalk" }}</span>
+              <span class="button-small">{{ or $.Site.Params.C4PButtonTextKey "SendYourTalk" | i18n }}</span>
             </a>
           {{ end }}
         {{ end }}

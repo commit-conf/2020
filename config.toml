@@ -21,7 +21,7 @@ Title = 'Commit Conf 2020'
   # Warning: Every link grouped here publish it in production. 
   # Be careful and only set one when you want to see it in the website.
   # Link to the C4P
-  C4PLink = ""
+  C4PLink = "https://www.koliseo.com/events/commit2020/r4p/5768033574322176"
   # Link to the agenda in Koliseo
   AgendaLink = ""
   # Form to register volunteers
@@ -40,6 +40,8 @@ Title = 'Commit Conf 2020'
   # Required. Text to show when the diversity tickets link is not available.
   # Previously filled entries are "DiversityTicketsAreNotYetAvailable" and "DiversityTicketsClosed"
   DiversityTicketsClosedKey = "DiversityTicketsAreNotYetAvailable"
+  # i18n entry to specify in the C4P btton. By default, it will be "SendYourTalk"
+  C4PButtonTextKey = "C4POpenSoon"
   # Optional. Text to announce anything. Agenda publish date, Commit 2021 dates, whatever.
   # Warning: Once a key is specified, it will be published
   # Prefilled entries are "AgendaAnnouncement" and "NewDatesAnnouncement"

@@ -11,7 +11,7 @@ other = 'Patrocinadores'
 
 # Home
 [TicketsStartDate]
-other = 'A la venta el 15 de Abril'
+other = 'A la venta el 15 de abril'
 [SendYourTalk]
 other = 'Envía tu charla'
 [VisitOurAgenda]
@@ -39,15 +39,15 @@ other = 'Comunidades'
 [Talks]
 other = 'Charlas'
 [BeHereDesc]
-other = '<h1>No se vive igual en video</h1><p class="highlight">Apuntarte la lista de charlas grabadas, y "el próximo fin de semana las veo", o "una charla al día, durante el almuerzo". Totalmente. En cuanto saques tiempo.</p><p>Commit no es sólo un evento de 140 charlas. Es conocer gente nueva con intereses similares, es hablar con el ponente tras la charla, es enterarse de lo que buscan las empresas punteras del país. Si te quedas en casa te pierdes la posibilidad de <a href="https://blog.commit-conf.com/un-commit-cualquiera/">crear tus propios recuerdos</a>. <b>No se trata sólo de asistir a un evento; se trata de vivir la experiencia</b>.</p><p itemprop="description">Commit es una conferencia con ponentes españoles que incluye todos los aspectos del desarrollo IT, desde técnicas de desarrollo de software hasta Big Data, Cloud o ML. Se celebrará en la Universidad San Pablo CEU en Madrid, el 27-28 de Noviembre.</p>'
+other = '<h1>No se vive igual en video</h1><p class="highlight">Apuntarte la lista de charlas grabadas, y "el próximo fin de semana las veo", o "una charla al día, durante el almuerzo". Totalmente. En cuanto saques tiempo.</p><p>Commit no es sólo un evento de 140 charlas. Es conocer gente nueva con intereses similares, es hablar con el ponente tras la charla, es enterarse de lo que buscan las empresas punteras del país. Si te quedas en casa te pierdes la posibilidad de <a href="https://blog.commit-conf.com/un-commit-cualquiera/">crear tus propios recuerdos</a>. <b>No se trata sólo de asistir a un evento; se trata de vivir la experiencia</b>.</p><p itemprop="description">Commit es una conferencia con ponentes españoles que incluye todos los aspectos del desarrollo IT, desde técnicas de desarrollo de software hasta Big Data, Cloud o ML. Se celebrará en la Universidad CEU San Pablo, Campus de Montepríncipe, en Madrid, el 27-28 de noviembre.</p>'
 [WorkDoesNotDiscriminate]
 other = 'Nuestro compromiso con la diversidad'
 [WorkDoesNotDiscriminateDesc]
-other = 'El trabajo no discrimina. Al trabajo no le importa tu género, tu religión o con quién compartes tu vida. Lo que único que le importa es que se haga. Y que se haga bien. Lo demás, lo hacen las personas.'
+other = 'El trabajo no discrimina. Al trabajo no le importa tu género, tu religión o con quién compartes tu vida. Lo único que le importa es que se haga. Y que se haga bien. Lo demás, lo hacen las personas.'
 [OurDiversityCommitments]
 other = 'La diversidad en los eventos tecnológicos deja bastante espacio para la mejora. Por este motivo hemos decidido apoyar diferentes iniciativas para ayudar a corregir esto.'
 [TechShessionsDesc]
-other = 'Tech SHEssions es un programa gratuito que arrancamos hace tres años para ayudar a mujeres técnicas a superar el síndrome del impostor y participar más activamente en las comunidades, apoyadas por mentoras que ya han recorrido ese mismo camino.'
+other = 'Tech SHEssions es un programa gratuito que arrancamos hace tres años para ayudar a mujeres técnicas a superar el síndrome del impostor y participar más activamente en los eventos, apoyadas por mentoras que ya han recorrido ese mismo camino.'
 [ReadMoreOfTechSHEssions]
 other = 'Leer más sobre Tech SHEssions'
 [DiversityTickets]
@@ -85,13 +85,15 @@ other = 'Resumen de Commit 2019'
 [PreviousEdition]
 other = 'En la anterior edición'
 [TheBestOf2019]
-other = 'En 2019 tuvimos muchas charlas. Mientras esperas a que llegue la fecha del evento puedes aprovechar y ver alguno de los vídeos.'
+other = 'En 2019 tuvimos muchas charlas. Mientras esperas a que llegue la próxima edición puedes aprovechar y ver alguno de los vídeos.'
 [ViewMoreOf2019]
 other = 'Ver más vídeos de 2019'
 [ClickToPlay]
 other = 'Haz clic para reproducir la grabación de {{.Count}}'
 [ViewMoreVideos]
 other = "Ver más vídeos"
+[C4POpenSoon]
+other = "Abre el 9 de marzo"
 
 # Newsletter
 [NewsletterTitle]
@@ -109,7 +111,7 @@ other = 'Recinto'
 [Address]
 other = 'Dirección'
 [VenueLocation]
-other = 'Estamos en la Universidad San Pablo CEU, Campus de Montepríncipe. Boadilla del monte, Madrid · <a target="_blank" href="https://goo.gl/maps/X5eoF" rel="noopener noreferrer" class="location-link" itemprop="url">Abrir en Google Maps</a>.'
+other = 'Estamos en la Universidad CEU San Pablo, Campus de Montepríncipe. Boadilla del Monte, Madrid · <a target="_blank" href="https://goo.gl/maps/X5eoF" rel="noopener noreferrer" class="location-link" itemprop="url">Abrir en Google Maps</a>.'
 [MapTitle]
 other = 'Haz clic para abrir la localización en Google Maps'
 [HowToGetThere]
@@ -121,7 +123,7 @@ other = '<b>Los shuttles son cortesía de la organización y podrían no alcanza
 [FreeShuttles]
 other = 'Shuttles gratuitos'
 [FreeShuttlesDesc]
-other = 'Ponemos disponibles unos autobuses gratuitos que salen desde/hacia Plaza de España y tardan unos 20 minutos en hacer el trayecto. Hemos ajustado el horario de acuerdo a nuestra experiencia, pero no podemos garantizar asientos para todos en todos los autobuses. Más detalles y horarios en nuestro <a href="https://blog.commit-conf.com" target="_blank">blog</a>.'
+other = 'Ponemos disponibles unos autobuses gratuitos que salen desde/hacia Plaza de España y tardan unos 20 minutos en hacer el trayecto. Hemos ajustado el horario de acuerdo a nuestra experiencia, pero no podemos garantizar asientos para todos en todos los autobuses. Más detalles y horarios en nuestro <a href="https://blog.commit-conf.com" target="_blank">blog</a> a partir de octubre.'
 [Registration]
 other = 'Registro'
 [Badges]
@@ -159,13 +161,13 @@ other = 'Cada ponente indicará en la agenda los requisitos para asistir a su wo
 [Cloakroom]
 other = '¿Habrá guardarropa?'
 [CloakroomDesc]
-other = 'Disponemos de un espacio para guardar tu abrigo, casco o maleta. La organización y los voluntarios vigilarán el guardarropa todo el tiempo. Aún así, <b>ni Commit ni la Universidad se hacen responsables de tus pertenencias</b>.'
+other = 'Disponemos de un espacio para guardar tu abrigo, casco o maleta. La organización y los voluntarios vigilarán el guardarropa todo el tiempo. Aun así, <b>ni Commit ni la Universidad se hacen responsables de tus pertenencias</b>.'
 
 # Tickets
 [Info]
 other = 'Información'
 [TicketsDesc]
-other = 'La venta de entradas comienza el 15 de Abril. La misma entrada vale para los dos días del evento y habrá varias tandas de entradas. Pero recuerda: las más baratas salen primero. ¡No te quedes sin la tuya!'
+other = 'La venta de entradas comienza el 15 de abril. La misma entrada vale para los dos días del evento y habrá varias tandas de entradas. Pero recuerda: las más baratas salen primero. ¡No te quedes sin la tuya!'
 [BuyTickets]
 other = 'Comprar entradas'
 [BuyTicketAtTheVenue]

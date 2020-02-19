@@ -39,15 +39,15 @@ other = 'Communities'
 [Talks]
 other = 'Talks'
 [BeHereDesc]
-other = '<h1>The recording is not the same</h1><p class="highlight">Make a list of the recorded talks "to watch over the weekend", or "one talk a day, during lunch." Totally. As soon as you make the time.</p><p>Commit is not just an event with 140 talks. It is about meeting new people with similar interests; it is talking to the speaker after the talk; it is finding out what are looking for the leading companies in the country. If you stay at home, you miss the possibility of <a href="https://blog.commit-conf.com/un-commit-cualquiera/">creating your own memories</a>. <b>It is not just about attending an event; It is about living the experience</b>.<p itemprop="description">Commit is a conference that showcases all aspects of IT development with Spanish speakers, from software development techniques to Big Data, Cloud, or ML. It will happen at Universidad San Pablo CEU in Madrid on November 27-28.</p>'
+other = '<h1>The recording is not the same</h1><p class="highlight">Make a list of the recorded talks "to watch over the weekend", or "one talk a day, during lunch." Totally. As soon as you make the time.</p><p>Commit is not just an event with 140 talks. It is about meeting new people with similar interests, talking to the speaker after the talk, or finding out what are looking for the leading companies in the country. If you stay at home, you miss the possibility of <a href="https://blog.commit-conf.com/un-commit-cualquiera/">creating your own memories</a>. <b>It is not just about attending an event; it is about living the experience</b>.<p itemprop="description">Commit is a conference that showcases all aspects of IT development with Spanish speakers, from software development techniques to Big Data, Cloud, or ML. It will happen at CEU San Pablo University, Montepríncipe Campus, in Madrid on November 27-28.</p>'
 [WorkDoesNotDiscriminate]
 other = 'Our commitment to diversity'
 [WorkDoesNotDiscriminateDesc]
-other = 'Work does not discriminate. Work does not care about your gender, your religion, or who you share your life with. The only thing that matters is that it be done. And let it be done well. People do the rest.'
+other = 'Work does not discriminate. Work does not care about your gender, your religion, or who you share your life with. The only thing that matters is to get it done. And let it be done well. People do the rest.'
 [OurDiversityCommitments]
 other = 'Diversity in technological events leaves enough room for improvement. For this reason, we have decided to support different initiatives to help correct this.'
 [TechShessionsDesc]
-other = 'Tech SHEssions is a free program that we started three years ago to help technical women to leave the impostor syndrome behind and participate more actively in the communities, supported by mentors who have already traveled that same path.'
+other = 'Tech SHEssions is a free program that we started three years ago to help technical women to leave the impostor syndrome behind and participate more actively in tech events, supported by mentors who have already traveled that same path.'
 [ReadMoreOfTechSHEssions]
 other = 'Read more about Tech SHEssions'
 [DiversityTickets]
@@ -65,7 +65,7 @@ other = 'Apply for your ticket'
 [OurCommunities]
 other = 'Our communities'
 [OurCommunitiesDesc]
-other = 'This event is only possible because of the non-valuable content and effort contributed by our communities. Benefit from them and attend their meetups for a different experience.'
+other = 'This event is only possible because of the non-valuable content and effort contributed by our communities. Get to know them and join their meetups for a different experience.'
 [AddYourComunity]
 other = 'Is your community missing? <a href="mailto:info@commit-conf.com">Contact us</a>'
 [KnowledgeIsPower]
@@ -85,13 +85,15 @@ other = 'Summary of Commit 2019'
 [PreviousEdition]
 other = 'In the previous edition'
 [TheBestOf2019]
-other = 'In 2019 we had many talks. While you wait for the date of the event, you can take advantage of and watch some of the videos.'
+other = 'In 2019 we had many talks. While you wait for the next edition, you can watch some of our videos.'
 [ViewMoreOf2019]
 other = 'View more videos of 2019'
 [ClickToPlay]
 other = 'Click to play the recording of {{.Count}}'
 [ViewMoreVideos]
 other = "View more videos"
+[C4POpenSoon]
+other = "Opens on March 9th"
 
 # Newsletter
 [NewsletterTitle]
@@ -109,7 +111,7 @@ other = 'Venue'
 [Address]
 other = 'Address'
 [VenueLocation]
-other = 'We are at San Pablo CEU University, Montepríncipe Campus. Boadilla del monte, Madrid · <a target="_blank" href="https://goo.gl/maps/X5eoF" rel="noopener noreferrer" class="location-link" itemprop="url">Open in Google Maps</a>.'
+other = 'We are at CEU San Pablo University, Montepríncipe Campus. Boadilla del Monte, Madrid · <a target="_blank" href="https://goo.gl/maps/X5eoF" rel="noopener noreferrer" class="location-link" itemprop="url">Open in Google Maps</a>.'
 [MapTitle]
 other = 'Click here to open the location in Google Maps'
 [HowToGetThere]
@@ -121,7 +123,7 @@ other = '<b>These shuttles are provided as a courtesy, and may not have enough c
 [FreeShuttles]
 other = 'Free shuttles'
 [FreeShuttlesDesc]
-other = 'We provide a free shuttle service to/from Plaza de España that takes 20 minutes to do a one-way trip. We have adjusted the schedule according to our experience, but we cannot guarantee seats for everyone in every shuttle. We will publish the timetable and more details on our <a href="https://blog.commit-conf.com" target="_blank">blog</a>.'
+other = 'We provide a free shuttle service to/from Plaza de España that takes 20 minutes to do a one-way trip. We have adjusted the schedule according to our experience, but we cannot guarantee seats for everyone in every shuttle. We will publish the timetable and more details starting from October on our <a href="https://blog.commit-conf.com" target="_blank">blog</a>.'
 [Registration]
 other = 'Registration'
 [Badges]
@@ -159,13 +161,13 @@ other = 'Each speaker will specify their workshop requirements on the agenda: la
 [Cloakroom]
 other = 'Will you have a cloakroom?'
 [CloakroomDesc]
-other = 'We will have storage space for your coat, helmet, or suitcase. The cloakroom will always have someone from the organization or volunteers. However, <b>neither Commit or the University will be responsible for your belongings</b>.'
+other = 'We will have storage space for your coat, helmet, or suitcase. There will be some volunteer or member of the organization supervising the cloakroom anytime. However, <b>neither Commit or the University will be responsible for your belongings</b>.'
 
 # Tickets
 [Info]
 other = 'Information'
 [TicketsDesc]
-other = 'Ticket sales begin on April 15. The same ticket is valid for both days of the event, and there will be several batches. But remember: the cheaper ones are first. Do not miss yours!'
+other = 'Ticket sales begin on April 15. The same ticket is valid for both days of the event, and there will be several batches. But remember: the earlier, the cheaper. Do not miss yours!'
 [BuyTickets]
 other = 'Buy tickets'
 [BuyTicketAtTheVenue]
@@ -199,7 +201,7 @@ other = 'If you are unemployed or if you are a student, you can buy a "Student/U
 [WillNeedToShow]
 other = 'At the registration desk you will have to show:'
 [StudentRequirements]
-other = 'If you are a student, your student ID. If you cease to be a student by the day of the event, you can show your ID from the previous academic year.'
+other = 'If you are a student, bring an ID that shows that you are a student, or that you were a student when you purchased the ticket.'
 [UnemployedRequirements]
 other = 'If unemployed, bring an INEM document that shows that you were unemployed by the purchase date of your ticket.'
 [LimitedTickets]
@@ -211,7 +213,7 @@ other = 'Do I need to register to attend a talk?'
 [TicketsAllowsToAttendAnyTalk]
 other = 'You do not need to register for talks. Your ticket allows you to attend any talk or lab. Although we distribute them through the tracks the best way possible, some of them will be more crowded than others, and you will not be able to get a seat for some specific one.'
 [HelpUsWithTalkLikes]
-other = 'To help us understand the talks with the bigger expected audience, <b>you can specify the talks you are more interested in on the agenda page</b>. We will assign the biggest rooms to the talks with the bigger expected audience. <a href="https://twitter.com/commitconf/status/1044880810069938176" target="_blank">Here</a> you have a tweet with instructions on how to do this.'
+other = 'To help us guess the talks with the bigger expected audience, <b>you can specify the talks you are more interested in on the agenda page</b>. We will assign the biggest rooms to the talks with the bigger expected audience. <a href="https://twitter.com/commitconf/status/1044880810069938176" target="_blank">Here</a> you have a tweet with the instructions on how to do this.'
 [IsMealIncluded]
 other = 'Is the meal included, or should I bring it with me?'
 [MealIsIncluded]
@@ -241,7 +243,7 @@ other = '<b>Gather feedback about your new products and initiatives</b>, measuri
 [LeadGeneration]
 other = '<b>Lead generation</b>: keep track of contacts made in your booth using our unique lead capture app.'
 [ShareYourWork]
-other = '<b>Share what you do</b> &mdash; in the end, all is about this.'
+other = "<b>Share what you do</b> &mdash; in the end, it's all about this."
 [GetInvolved]
 other = 'Get involved'
 [GetInContact]
