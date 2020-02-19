@@ -6,17 +6,17 @@
     <section>
       <h2>Tech SHEssions</h2>
       <p>{{i18n "TechShessionsDesc"}}</p>
-      <p><a href="https://techshessions.com"
-        >&raquo; {{i18n "ReadMoreOfTechSHEssions"}}</a
-      ></p>
+      <p>
+        <a href="https://techshessions.com">&raquo; {{i18n "ReadMoreOfTechSHEssions"}}</a>
+      </p>
     </section>
     <section>
       <h2>{{i18n "DiversityTickets"}}</h2>
       <p>{{i18n "DiversityTicketsDesc"}}</p>
       {{ if $.Site.Params.DiversityTicketsLink }}
-      <a href="{{$.Site.Params.DiversityTicketsLink}}" class="button info"
-        >{{i18n "ApplyForDiversityTickets"}}</a
-      >
+      <a href="{{$.Site.Params.DiversityTicketsLink}}" class="button info">
+        {{i18n "ApplyForDiversityTickets"}}
+      </a>
       <p><small>{{i18n "DiversityTicketsDeadline"}}</small></p>
       {{ else }}
       <p>{{i18n $.Site.Params.DiversityTicketsClosedKey | safeHTML}}</p>
