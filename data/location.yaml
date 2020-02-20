@@ -10,7 +10,6 @@
     - title: FreeShuttles
       items:
         - content: FreeShuttlesDesc
-        - content: ShuttlesAreCourtesy
     - title: Cloakroom
       items:
         - content: CloakroomDesc
@@ -25,17 +24,14 @@
     - title: AccessControl
       items:
         - content: AccessControlDesc
-        - content: DoNotNeedToPrintTickets
     - title: LateRegistration
       items: 
         - content: LateRegistrationDesc
-        - content: RegisterOnlyOnce
 - title: Others
   items:
     - title: BringLaptop
       items:
         - content: BringLaptopDesc
-        - content: PowerPlugs
     - title: WorkshopRequirements
       items:
         - content: CheckWorkshopRequirements

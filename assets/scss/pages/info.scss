@@ -6,6 +6,8 @@
   h3 {
     font-family: inherit;
     font-weight: bold;
+    color: inherit;
+    font-size: $font-size-xl;
   }
 }
 .zebra > section:nth-child(2n +1) {

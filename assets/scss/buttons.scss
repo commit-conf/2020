@@ -18,6 +18,7 @@ $button-info-color: $color-white;
   background: $button-bg;
   color: $button-color;
   margin: $margin-0 $margin-2 $margin-4 $margin-0;
+  font-size: $font-size-l;
 
   &:focus, &:hover, &:active {
     background-color: darken($button-bg, 5%);

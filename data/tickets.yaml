@@ -1,11 +1,9 @@
 - title: TicketInvoice
   items:
     - content: TicketInvoiceCreation
-    - content: TicketInvoiceLimit
 - title: TransferOrModifyTicketData
   items:
     - content: ModifyTicketData
-    - content: TransferTicket
 - title: Refund
   items:
     - content: RefundDesc
@@ -15,11 +13,9 @@
 - title: StudentOrUnemployedRequirements
   items:
     - content: StudentOrUnemployedIntro
-    - content: WillNeedToShow
     - content:
         - StudentRequirements
         - UnemployedRequirements
-    - content: LimitedTickets
     - content: TransferRequirements
 - title: BuyTicketAtTheVenue
   items:
@@ -31,4 +27,3 @@
 - title: IsMealIncluded
   items:
     - content: MealIsIncluded
-    - content: MealAlternative

@@ -21,9 +21,8 @@
     - name: Blog
       href: https://blog.commit-conf.com
       i18n: false
-    - name: 2019
+    - name: 2019Edition
       href: https://2019.commit-conf.com
-      i18n: false
 - name: AboutUs
   items:
     - name: PrivacyPolicy

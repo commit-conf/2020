@@ -1,7 +1,7 @@
 [GoToTheHomepage]
 other = 'Go to the Homepage'
 [Summary]
-other = 'Commit is the event that brings together all the IT developer communities in Spain for two days.'
+other = 'Commit is the event that brings together the IT communities in Spain for two days.'
 
 # Menu
 [Tickets]
@@ -39,33 +39,33 @@ other = 'Communities'
 [Talks]
 other = 'Talks'
 [BeHereDesc]
-other = '<h1>The recording is not the same</h1><p class="highlight">Make a list of the recorded talks "to watch over the weekend", or "one talk a day, during lunch." Totally. As soon as you make the time.</p><p>Commit is not just an event with 140 talks. It is about meeting new people with similar interests, talking to the speaker after the talk, or finding out what are looking for the leading companies in the country. If you stay at home, you miss the possibility of <a href="https://blog.commit-conf.com/un-commit-cualquiera/">creating your own memories</a>. <b>It is not just about attending an event; it is about living the experience</b>.<p itemprop="description">Commit is a conference that showcases all aspects of IT development with Spanish speakers, from software development techniques to Big Data, Cloud, or ML. It will happen at CEU San Pablo University, Montepríncipe Campus, in Madrid on November 27-28.</p>'
+other = '<h1>The recording is not the same</h1><p class="highlight">Make a list of the recorded talks "to watch over the weekend", or "one talk a day, during lunch." Totally. As soon as you make time.</p><p>Commit is not only an event with 140 talks — it&apos;s about meeting new people with similar interests, talking to the speaker after the talk, or finding out what the companies leading in IT are all about. If you stay at home, you miss the possibility of <a href="https://blog.commit-conf.com/un-commit-cualquiera/">creating your own memories</a>. <b>It&apos;s not just about attending an event, but about living the experience</b>.<p itemprop="description">Commit is a conference that explores all aspects of IT development with Spanish speakers, from software development techniques to Big Data, Cloud, or ML. It will happen at CEU San Pablo University, Montepríncipe Campus, in Madrid on November 27-28.</p>'
 [WorkDoesNotDiscriminate]
 other = 'Our commitment to diversity'
 [WorkDoesNotDiscriminateDesc]
-other = 'Work does not discriminate. Work does not care about your gender, your religion, or who you share your life with. The only thing that matters is to get it done. And let it be done well. People do the rest.'
+other = 'Work does not discriminate. Work does not care about your gender, your religion, or who you share your life with. The only thing that matters is to get it done, and get it done right — the rest is done by people.'
 [OurDiversityCommitments]
 other = 'Diversity in technological events leaves enough room for improvement. For this reason, we have decided to support different initiatives to help correct this.'
 [TechShessionsDesc]
-other = 'Tech SHEssions is a free program that we started three years ago to help technical women to leave the impostor syndrome behind and participate more actively in tech events, supported by mentors who have already traveled that same path.'
+other = 'Tech SHEssions is a free program that we started three years ago to help technical women to leave the impostor syndrome behind and participate more actively in tech events, supported by mentors who have already traveled the same path.'
 [ReadMoreOfTechSHEssions]
 other = 'Read more about Tech SHEssions'
 [DiversityTickets]
 other = 'Diversity tickets'
 [DiversityTicketsDesc]
-other = 'Diversity is not just a matter of gender. If you are a member of an underrepresented group (including, but not limited to: non-Caucasians, LGBTQIA+, women, and people with disabilities), you can request one of our tickets available for diversity.'
+other = 'Diversity is not just a matter of gender. If you are a member of an underrepresented group (including, but not limited to: non-caucasians, LGBTQIA+, women, and people with disabilities), you can request one of our tickets available for diversity.'
 [DiversityTicketsDeadline]
 other = 'Application deadline: September 30th.'
 [DiversityTicketsClosed]
 other = '<b>The submission deadline is closed</b>. We will notify you by mail the result of your request no later than October 15. If you do not hear from us, please <a href="mailto:info@commit-conf.com">contact us</a>.'
 [DiversityTicketsAreNotYetAvailable]
-other = 'Registration for these tickets is not yet open, but we will announce it as soon as possible here and in our <a href="https://www.twitter.com/commitconf" target="_blank">Twitter</a> account.'
+other = 'The registration for these tickets is not yet open, but we will announce it as soon as possible here and in our <a href="https://www.twitter.com/commitconf" target="_blank">Twitter</a> account.'
 [ApplyForDiversityTickets]
 other = 'Apply for your ticket'
 [OurCommunities]
 other = 'Our communities'
 [OurCommunitiesDesc]
-other = 'This event is only possible because of the non-valuable content and effort contributed by our communities. Get to know them and join their meetups for a different experience.'
+other = 'This event is only possible because of the amazing content contributed by our communities. Get to know them and drop by a meetup to experiment a different experience.'
 [AddYourComunity]
 other = 'Is your community missing? <a href="mailto:info@commit-conf.com">Contact us</a>'
 [KnowledgeIsPower]
@@ -85,13 +85,13 @@ other = 'Summary of Commit 2019'
 [PreviousEdition]
 other = 'In the previous edition'
 [TheBestOf2019]
-other = 'In 2019 we had many talks. While you wait for the next edition, you can watch some of our videos.'
+other = 'While you wait for Commit 2020, you can watch some of our recorded talks from 2019.'
 [ViewMoreOf2019]
 other = 'View more videos of 2019'
 [ClickToPlay]
 other = 'Click to play the recording of {{.Count}}'
-[ViewMoreVideos]
-other = "View more videos"
+[View2019]
+other = "More from 2019"
 [C4POpenSoon]
 other = "Opens on March 9th"
 
@@ -103,7 +103,7 @@ other = 'Get notified when we announce changes or publish the final agenda. You 
 [NewsletterMore]
 other = 'For more information, see our <a href="/en/cookies">Privacy Policy</a>.'
 [NewsletterSubscribe]
-other = 'Subscribe to the mailing list'
+other = 'Subscribe'
 
 # Help
 [Venue]
@@ -117,109 +117,91 @@ other = 'Click here to open the location in Google Maps'
 [HowToGetThere]
 other = 'How to get there'
 [TransportOptionsDesc]
-other = 'You can use public transport, taxi, car, or any of the free shuttles that the organization will provide during the event. Because the parking space is limited, <b>we recommend not to go by car and to use public transport</b>, which is surprisingly simple.'
-[ShuttlesAreCourtesy]
-other = '<b>These shuttles are provided as a courtesy, and may not have enough capacity for everyone.</b>'
+other = 'You can use public transport, taxi, car, or any of the free shuttles that the organization provides during the event. Because the parking space is limited, <b>we recommend not to go by car and to use public transport</b>, which is surprisingly simple.'
 [FreeShuttles]
 other = 'Free shuttles'
 [FreeShuttlesDesc]
-other = 'We provide a free shuttle service to/from Plaza de España that takes 20 minutes to do a one-way trip. We have adjusted the schedule according to our experience, but we cannot guarantee seats for everyone in every shuttle. We will publish the timetable and more details starting from October on our <a href="https://blog.commit-conf.com" target="_blank">blog</a>.'
+other = 'We provide a free shuttle service connecting to Plaza de España that takes 20 minutes for a one-way trip. We have adjusted the schedule according to our experience, but we cannot guarantee seats for everyone. We will publish the timetable <a href="https://blog.commit-conf.com" target="_blank">on our blog</a> in October.'
 [Registration]
 other = 'Registration'
 [Badges]
-other = 'Badges'
+other = 'Credentials'
 [BadgesDesc]
-other = 'We are going to be strict with access to the talks. With this in mind, at the registration desk, we will give you:'
+other = 'We are strict when controlling access to the talks. At the registration desk, we give you:'
 [WristbandDesc]
-other = '<p><b>A wristband</b>: This wristband must be showed when asked by the organization at the doors of the tracks. It will also be necessary to pick your lunch box, and you must wear it during the entire event. Neither in the pocket, nor the backpack, nor at home. <b>Without a wristband, the organization reserves the right to prohibit access to the talks</b>. </p><p>If you want to use the same ticket for one person the first day and another one the second, tell it at the info point before leaving the event, and we will cut your wristband and give you another for the next day.</p>'
+other = '<p><b>A wristband</b>: You must wear this wristband at all times, and show it when requested by the organization. Without your wristband, you will not be allowed access to any session. If you want to use the same ticket for a different person the second day of the event, go to the info point before leaving on Friday, and we will cut your wristband and give you another for the second day.</p>'
 [BadgeDesc]
-other = '<b>A badge</b>: The only purpose of it is to facilitate networking. It is not mandatory to wear it, but it will help to meet new people.'
+other = '<b>A badge</b>: The only purpose of the badge is to facilitate networking. It is not mandatory to wear it, but it helps to meet new people.'
 [AccessControl]
 other = 'Registration and access control'
 [AccessControlDesc]
-other = 'We will use the Koliseo Access Control app to verify your ticket. You only have to bring your ticket with you and <b>wear the wristband we will give you</b>.'
-[DoNotNeedToPrintTickets]
-other = 'You can bring your ticket either printed out or on your mobile device.'
+other = 'We use an access control app to verify your ticket. You only have to bring your ticket, printed or in your cell phone.'
 [LateRegistration]
-other = 'I will not be able to make it to the first session on the first day, or I will only go on Saturday. Will I be able to register?'
+other = 'I will arrive later, or during the second day. How do I register?'
 [LateRegistrationDesc]
-other = 'The agenda specifies the official registration period, but you can register anytime, either Friday or Saturday, at the Info Point in the main entrance.'
-[RegisterOnlyOnce]
-other = 'Once you registered for Friday, you do not need to register again for Saturday, just wear your wristband and the badge we gave you since <b>there will be people controlling</b>.'
+other = 'The agenda specifies the official registration times, but you can register later at the Info Point in the main hall. The same ticket is valid for Friday and Saturday, you just need to wear your badge and wristband both days.'
 [Others]
 other = 'Others'
 [BringLaptop]
-other = 'Do I have to bring my laptop?'
+other = 'Should I bring my laptop?'
 [BringLaptopDesc]
-other = 'If you want to go to a workshop, you will most probably need it. It could also be useful to take notes or review the speaker slides during the talk.'
-[PowerPlugs]
-other = 'Please mind your laptop battery life. There will be power plugs in lab tracks, but not for talks.'
+other = 'If you plan to attend a workshop, you will probably need it. In any case, it may be useful to take notes or review the speaker slides during a talk. There are power plugs in the workshops, but not in the talks.'
 [WorkshopRequirements]
 other = 'What do I need to attend a workshop?'
 [CheckWorkshopRequirements]
-other = 'Each speaker will specify their workshop requirements on the agenda: laptop, install a specific application, previous experience, etc.'
+other = 'Each speaker documents their workshop requirements on their slot description in the agenda: laptop, have a specific application installed, previous experience, etc.'
 [Cloakroom]
-other = 'Will you have a cloakroom?'
+other = 'Is there a cloakroom?'
 [CloakroomDesc]
-other = 'We will have storage space for your coat, helmet, or suitcase. There will be some volunteer or member of the organization supervising the cloakroom anytime. However, <b>neither Commit or the University will be responsible for your belongings</b>.'
+other = 'We have supervised storage for your coat, helmet, or suitcase. However, neither Commit nor the University are responsible for your belongings.'
 
 # Tickets
 [Info]
 other = 'Information'
 [TicketsDesc]
-other = 'Ticket sales begin on April 15. The same ticket is valid for both days of the event, and there will be several batches. But remember: the earlier, the cheaper. Do not miss yours!'
+other = 'Ticket sales begin on April 15. The same ticket is valid for both days of the event.'
 [BuyTickets]
-other = 'Buy tickets'
+other = 'Get your ticket'
 [BuyTicketAtTheVenue]
-other = 'Can I buy my ticket directly at the venue?'
+other = 'Can I purchase my ticket directly at the venue?'
 [BuyTicketAtTheVenueDesc]
-other = 'No, you can only buy tickets at Koliseo until the event tickets sold out.'
+other = 'No, you can only get tickets through Koliseo until they are sold out.'
 [TransferOrModifyTicketData]
-other = 'I want to transfer my ticket to someone else or change any data'
+other = 'I want to change my data or transfer my ticket to someone else'
 [ModifyTicketData]
-other = 'If you need to change any data like the name or the t-shirt size, you can edit it in your ticket page in Koliseo. The organization will accumulate some data (like t-shirt size or food preference) before the event, so make sure that you do not update these too close to the event date.'
-[TransferTicket]
-other = 'If you want to transfer your ticket to someone else, get in contact with <a target="_blank" href="mailto:info@commit-conf.com">the organization</a> specifying the username (in Koliseo) of the requested new ticket holder.'
+other = 'You can change the information associated to your ticket (like your name or t-shirt size) from your ticket page in Koliseo, up to one month before the event. To transfer your ticket to someone else, <a target="_blank" href="mailto:info@commit-conf.com">get in contact</a> specifying the Koliseo username of the new ticket holder.'
 [TicketInvoice]
 other = 'I need an invoice for my ticket'
 [TicketInvoiceCreation]
-other = 'You can create the invoice yourself by using the <code>Create invoice</code> button that appears on your ticket page at <a target="_blank" href="https://www.koliseo.com" target="_blank">Koliseo</a> and filling in your data.'
-[TicketInvoiceLimit]
-other = 'You can generate your invoice automatically until up to 30 days after the event.'
+other = 'You can create the invoice by clicking the "Create invoice" button that appears on your ticket at <a target="_blank" href="https://www.koliseo.com" target="_blank">Koliseo</a>. You can generate your invoice up to 30 days after the event.'
 [Refund]
-other = 'I definitely will not be able to attend. Can I return or ask for a refund?'
+other = 'I will not be able to attend. Can I ask for a refund?'
 [RefundDesc]
-other = '<b>In no case will we refund or reimburse any purchased ticket</b>, but you can transfer it to someone else.'
+other = 'In no case will we refund or reimburse any purchased ticket, but you can transfer it to someone else.'
 [CannotFindTicket]
 other = 'I cannot find my ticket in Koliseo.'
 [CannotFindTicketDesc]
-other = 'It happens when the user signs in using a different account provider from the one used to purchase the ticket (for example, buy using a Google account and log in later using Facebook). For Koliseo these would be two different accounts, even if they share e-mail.'
+other = 'This can happen when the user signs in using a different account provider from the one used to purchase the ticket (for example, purchase with a Google account and later sign in using Facebook). To Koliseo, these are two different accounts even when they share the same e-mail.'
 [StudentOrUnemployedRequirements]
-other = 'I am a student or unemployed. Do I get any discount? What would the requirements be?'
+other = 'Are there discounts for students or unemployed attendees?'
 [StudentOrUnemployedIntro]
-other = 'If you are unemployed or if you are a student, you can buy a "Student/Unemployed" ticket at a reduced price.'
-[WillNeedToShow]
-other = 'At the registration desk you will have to show:'
+other = 'If you are a student or currently unemployed, you can get a "Student/Unemployed" ticket at a reduced price. The day of the event you will be required to show:'
 [StudentRequirements]
-other = 'If you are a student, bring an ID that shows that you are a student, or that you were a student when you purchased the ticket.'
+other = 'Student: an ID that documents that you are a student, or that you were a student when you purchased the ticket.'
 [UnemployedRequirements]
-other = 'If unemployed, bring an INEM document that shows that you were unemployed by the purchase date of your ticket.'
-[LimitedTickets]
-other = 'There is a limited number of these tickets.'
+other = 'Unemployed: an INEM document that shows that you were unemployed by the purchase date of your ticket.'
 [TransferRequirements]
-other = '<b>If you finally will not be able to assist and are planning to transfer your ticket, the new attendee will need to fulfill the same requirements.</b>'
+other = 'If you transfer your ticket, the new attendee must fulfill the same requirements.'
 [WorkshopsRequireRegistration]
-other = 'Do I need to register to attend a talk?'
+other = 'Do I need to register to attend a session?'
 [TicketsAllowsToAttendAnyTalk]
-other = 'You do not need to register for talks. Your ticket allows you to attend any talk or lab. Although we distribute them through the tracks the best way possible, some of them will be more crowded than others, and you will not be able to get a seat for some specific one.'
+other = 'You do not need to register to attend a particular talk or workshop. Your ticket allows you to attend any session, and the available seats will be taken in order of arrival. We make effort to distribute the sessions over the available rooms, but some of them will get more crowded than others and you may not be able to find a seat for the specific session you wanted to attend.'
 [HelpUsWithTalkLikes]
-other = 'To help us guess the talks with the bigger expected audience, <b>you can specify the talks you are more interested in on the agenda page</b>. We will assign the biggest rooms to the talks with the bigger expected audience. <a href="https://twitter.com/commitconf/status/1044880810069938176" target="_blank">Here</a> you have a tweet with the instructions on how to do this.'
+other = 'To help us estimate interest for each session, you can bookmark in the agenda the talks that you are planning to attend. <a href="https://twitter.com/commitconf/status/1044880810069938176" target="_blank">This tweet explains the process</a>.'
 [IsMealIncluded]
-other = 'Is the meal included, or should I bring it with me?'
+other = 'Is lunch included?'
 [MealIsIncluded]
-other = 'The ticket includes coffee breaks, meals, and the networking beer break. While buying your ticket, <b>please specify any food preference or special needs</b> (we will have vegetarian, vegan, and gluten-free options).'
-[MealAlternative]
-other = 'We will be more than two thousand people, which gives limited alternatives for customization. The meal will be a lunch box with sandwiches, fruits, and chocolate. As an alternative, you can use the cafeteria of the University or bring your meal from home.'
+other = 'The ticket includes the coffee breaks, lunch, and the networking beers on Friday evening. You can specify any food restriction (vegetarian, vegan, gluten-free) during your ticket purchase. As an alternative, you can use the cafeteria of the University or bring your meal from home.'
 
 # Sponsors
 [OurSponsors]
@@ -271,9 +253,9 @@ other = 'YouTube subscribers'
 [Edition]
 other = 'Edition'
 [AttendeesExperience]
-other = 'Attendees experience'
+other = 'Attendee experience'
 [AttendeesJobRoles]
-other = 'Attendees job roles'
+other = 'Attendee Job role'
 [years]
 other = 'years'
 [Students]
@@ -410,3 +392,5 @@ other = 'Code of conduct'
 other = 'Terms and Conditions'
 [TheTeam]
 other = 'The team'
+[2019Edition]
+other = '2019 Edition'

@@ -1,7 +1,7 @@
 [GoToTheHomepage]
 other = 'Ir a la página de inicio'
 [Summary]
-other = 'Commit es el evento que junta a todas las comunidades de desarrolladores IT de España durante dos días.'
+other = 'Commit es el evento que junta a las comunidades de IT de España durante dos días.'
 
 # Menu
 [Tickets]
@@ -39,11 +39,11 @@ other = 'Comunidades'
 [Talks]
 other = 'Charlas'
 [BeHereDesc]
-other = '<h1>No se vive igual en video</h1><p class="highlight">Apuntarte la lista de charlas grabadas, y "el próximo fin de semana las veo", o "una charla al día, durante el almuerzo". Totalmente. En cuanto saques tiempo.</p><p>Commit no es sólo un evento de 140 charlas. Es conocer gente nueva con intereses similares, es hablar con el ponente tras la charla, es enterarse de lo que buscan las empresas punteras del país. Si te quedas en casa te pierdes la posibilidad de <a href="https://blog.commit-conf.com/un-commit-cualquiera/">crear tus propios recuerdos</a>. <b>No se trata sólo de asistir a un evento; se trata de vivir la experiencia</b>.</p><p itemprop="description">Commit es una conferencia con ponentes españoles que incluye todos los aspectos del desarrollo IT, desde técnicas de desarrollo de software hasta Big Data, Cloud o ML. Se celebrará en la Universidad CEU San Pablo, Campus de Montepríncipe, en Madrid, el 27-28 de noviembre.</p>'
+other = '<h1>No se vive igual en video</h1><p class="highlight">Apuntarte la lista de charlas grabadas, y "el próximo fin de semana las veo", o "una charla al día, durante el almuerzo". Totalmente. En cuanto saques tiempo.</p><p>Commit no es sólo un evento de 140 charlas — es conocer gente nueva con intereses similares, es hablar con el ponente tras la charla, es enterarse de lo que buscan las empresas punteras del país. Si te quedas en casa te pierdes la posibilidad de <a href="https://blog.commit-conf.com/un-commit-cualquiera/">crear tus propios recuerdos</a>. <b>No se trata sólo de asistir a un evento; se trata de vivir la experiencia</b>.</p><p itemprop="description">Commit es una conferencia con ponentes españoles que incluye todos los aspectos del desarrollo IT, desde técnicas de desarrollo de software hasta Big Data, Cloud o ML. Se celebrará en la Universidad CEU San Pablo, Campus de Montepríncipe, en Madrid, el 27-28 de noviembre.</p>'
 [WorkDoesNotDiscriminate]
 other = 'Nuestro compromiso con la diversidad'
 [WorkDoesNotDiscriminateDesc]
-other = 'El trabajo no discrimina. Al trabajo no le importa tu género, tu religión o con quién compartes tu vida. Lo único que le importa es que se haga. Y que se haga bien. Lo demás, lo hacen las personas.'
+other = 'El trabajo no discrimina. Al trabajo no le importa tu género, tu religión o con quién compartes tu vida. Lo único que le importa es que se haga, y que se haga bien — lo demás, lo hacen las personas.'
 [OurDiversityCommitments]
 other = 'La diversidad en los eventos tecnológicos deja bastante espacio para la mejora. Por este motivo hemos decidido apoyar diferentes iniciativas para ayudar a corregir esto.'
 [TechShessionsDesc]
@@ -65,7 +65,7 @@ other = 'Solicita tu entrada'
 [OurCommunities]
 other = 'Nuestras comunidades'
 [OurCommunitiesDesc]
-other = 'Este evento sólo es posible gracias al contenido y esfuerzo aportado por nuestras comunidades. Aprovecha y asiste a sus meetups para una experiencia diferente.'
+other = 'Este evento sólo es posible gracias al increíble contenido aportado por nuestras comunidades. Conócelos y déjate caer por algún meetup para vivir una experiencia diferente.'
 [AddYourComunity]
 other = '¿Falta tu comunidad? <a href="mailto:info@commit-conf.com">Contáctanos</a>'
 [KnowledgeIsPower]
@@ -85,13 +85,13 @@ other = 'Resumen de Commit 2019'
 [PreviousEdition]
 other = 'En la anterior edición'
 [TheBestOf2019]
-other = 'En 2019 tuvimos muchas charlas. Mientras esperas a que llegue la próxima edición puedes aprovechar y ver alguno de los vídeos.'
+other = 'Mientras esperas a Commit 2020, puedes ver algunas de nuestras charlas grabadas en 2019.'
 [ViewMoreOf2019]
 other = 'Ver más vídeos de 2019'
 [ClickToPlay]
 other = 'Haz clic para reproducir la grabación de {{.Count}}'
-[ViewMoreVideos]
-other = "Ver más vídeos"
+[View2019]
+other = "Más de 2019"
 [C4POpenSoon]
 other = "Abre el 9 de marzo"
 
@@ -117,109 +117,91 @@ other = 'Haz clic para abrir la localización en Google Maps'
 [HowToGetThere]
 other = 'Cómo llegar'
 [TransportOptionsDesc]
-other = 'Puedes llegar en transporte público, taxi, coche o a través de los shuttles gratuitos que la organización pondrá a disposición durante el evento. Como el parking tiene capacidad limitada, <b>recomendamos no venir en coche y usar el transporte público</b>, que es sorprendentemente simple.'
-[ShuttlesAreCourtesy]
-other = '<b>Los shuttles son cortesía de la organización y podrían no alcanzar para todo el mundo.</b>'
+other = 'Puedes llegar en transporte público, taxi, coche o uno de los shuttles gratuitos que la organización pone disponibles durante el evento. Como el parking tiene capacidad limitada, <b>recomendamos no venir en coche y usar el transporte público</b>, que es sorprendentemente simple.'
 [FreeShuttles]
 other = 'Shuttles gratuitos'
 [FreeShuttlesDesc]
-other = 'Ponemos disponibles unos autobuses gratuitos que salen desde/hacia Plaza de España y tardan unos 20 minutos en hacer el trayecto. Hemos ajustado el horario de acuerdo a nuestra experiencia, pero no podemos garantizar asientos para todos en todos los autobuses. Más detalles y horarios en nuestro <a href="https://blog.commit-conf.com" target="_blank">blog</a> a partir de octubre.'
+other = 'Ponemos disponibles unos autobuses gratuitos conectando con Plaza de España que tardan unos 20 minutos por trayecto. Hemos ajustado el horario de acuerdo a nuestra experiencia, pero no podemos garantizar asientos para todo el mundo. Publicaremos el horario <a href="https://blog.commit-conf.com" target="_blank">en nuestro blog</a> en octubre.'
 [Registration]
 other = 'Registro'
 [Badges]
 other = 'Acreditaciones'
 [BadgesDesc]
-other = 'Seremos estrictos para el acceso a las charlas. Con esto en mente, en el registro se te dará:'
+other = 'Somos estrictos en el control de acceso a las charlas. En el registro te damos:'
 [WristbandDesc]
-other = '<p><b>Una pulsera</b>: Esta pulsera deberá mostrarse cuando alguien de la organización lo solicite en las puerta de las aulas y para la entrega de la comida, y llevarse puesta durante todo el evento. Ni en el bolsillo, ni en la mochila, ni en casa. <b>Si no se tiene la pulsera, la organización se reserva el derecho de impedir el acceso a las charlas</b>. </p><p>Si quieres usar una misma entrada para que una persona vaya el primer día y otra diferente el segundo, dilo en el mostrador de información antes de irte del evento y nos encargaremos de cortar tu pulsera y darte otra para el día siguiente.</p>'
+other = '<p><b>Una pulsera</b>: Debes llevar esta pulsera puesta en todo momento, y mostrarla cuando alguien de la organización lo solicite. Sin pulsera, no se te permitirá acceder a ninguna sesión. Si quieres usar una misma entrada para que una persona diferente asista el segundo día, dilo en el mostrador de información antes de irte del evento y nos encargaremos de cortar tu pulsera y darte otra para el día siguiente.</p>'
 [BadgeDesc]
-other = '<b>Un badge</b>: El único cometido de los badges es facilitar el networking. No es obligatorio llevarlo, pero ayuda a conocer gente.'
+other = '<b>Un badge</b>: El único objetivo del badge es facilitar el networking. No es obligatorio llevarlo, pero ayuda a conocer gente.'
 [AccessControl]
 other = 'Registro y control de acceso'
 [AccessControlDesc]
-other = 'Para acceder al evento se utilizará la aplicación de control de acceso de Koliseo. Lo único que tienes que traer es tu entrada y luego, <b>no perder la pulsera que te daremos</b>.'
-[DoNotNeedToPrintTickets]
-other = 'Puedes traer la entrada impresa o en el móvil, eso da igual.'
+other = 'Utilizamos una app de control de accesos para validar tu entrada. Lo único que tienes que traer es tu entrada impresa o en el móvil.'
 [LateRegistration]
-other = 'No podré llegar al comienzo de Commit o iré sólo el sábado. ¿Podré hacer el registro?'
+other = 'Llegaré más tarde o durante el segundo día. ¿Cómo hago el registro?'
 [LateRegistrationDesc]
-other = 'Aunque la hora principal del registro sea la que indicamos en la agenda, cualquier asistente podrá registrarse en cualquier momento del día, tanto el viernes como el sábado, en el mostrador del hall principal, justo en la entrada.'
-[RegisterOnlyOnce]
-other = 'Si ya te has registrado el viernes no tendrás que volver a registrarte el sábado. Será suficiente que lleves puesto el badge y la pulsera que te habremos entregado, dado que <b>habrá controles durante el evento</b>.'
+other = 'La agenda especifica la hora oficial de registro, pero puedes registrarte más tarde en el mostrador del hall principal. La misma entrada es válida para viernes y sábado, es suficiente con que lleves puesto tu badge y pulsera ambos días.'
 [Others]
 other = 'Otros'
 [BringLaptop]
-other = '¿Tendré que llevar mi portátil?'
+other = '¿Debo llevar mi portátil?'
 [BringLaptopDesc]
-other = 'Si piensas asistir a un taller, en la mayoría de los casos lo necesitarás. También podría ser útil para tomar apuntes o revisar las transparencias del ponente durante la charla.'
-[PowerPlugs]
-other = 'En las aulas de talleres habrá enchufes para cargar tu portátil, pero no en las charlas.'
+other = 'Si piensas asistir a un taller, probablemente lo necesitarás. En todo caso, podría ser útil para tomar apuntes o revisar las transparencias del ponente durante alguna charla. En los talleres hay enchufes para cargar tu portátil, pero no en las charlas.'
 [WorkshopRequirements]
-other = '¿Qué necesito para asistir a los workshops?'
+other = '¿Qué necesito para asistir a un workshop?'
 [CheckWorkshopRequirements]
-other = 'Cada ponente indicará en la agenda los requisitos para asistir a su workshop: portátil, instalar algún programa, experiencia previa, etc.'
+other = 'Cada ponente indica en su sesión de la agenda los requisitos para asistir a su workshop: portátil, tener instalado algún programa, experiencia previa, etc.'
 [Cloakroom]
-other = '¿Habrá guardarropa?'
+other = '¿Hay guardarropa?'
 [CloakroomDesc]
-other = 'Disponemos de un espacio para guardar tu abrigo, casco o maleta. La organización y los voluntarios vigilarán el guardarropa todo el tiempo. Aun así, <b>ni Commit ni la Universidad se hacen responsables de tus pertenencias</b>.'
+other = 'Disponemos de guardarropa vigilado para tu abrigo, casco o maleta. Sin embargo, ni Commit ni la Universidad se hacen responsables de tus pertenencias.'
 
 # Tickets
 [Info]
 other = 'Información'
 [TicketsDesc]
-other = 'La venta de entradas comienza el 15 de abril. La misma entrada vale para los dos días del evento y habrá varias tandas de entradas. Pero recuerda: las más baratas salen primero. ¡No te quedes sin la tuya!'
+other = 'La venta de entradas comienza el 15 de abril. La misma entrada vale para los dos días del evento.'
 [BuyTickets]
-other = 'Comprar entradas'
+other = 'Consigue tu entrada'
 [BuyTicketAtTheVenue]
 other = '¿Puedo comprar mi entrada directamente en el recinto?'
 [BuyTicketAtTheVenueDesc]
-other = 'No, sólo se podrán comprar las entradas en Koliseo hasta que se acaben.'
+other = 'No, sólo se pueden adquirir entradas a través de Koliseo hasta que se agoten.'
 [TransferOrModifyTicketData]
 other = 'Quiero ceder o cambiar algún dato de mi entrada'
 [ModifyTicketData]
-other = 'Si necesitas cambiar datos de tu entrada, como el nombre o la talla de camiseta, puedes hacerlo accediendo a la página de tu entrada y editando allí mismo los datos. La organización consultará ciertos datos (como la talla de camiseta o tipo de comida) antes del día del evento, así que mejor no apures demasiado para cambiar los datos.'
-[TransferTicket]
-other = 'Si lo que quieres es directamente transferirle tu entrada a otro usuario de Koliseo, ponte en contacto con <a href="mailto:info@commit-conf.com" target="_blank">la organización</a> indicando el nombre de usuario de Koliseo de la persona a la que quieres transferirle la entrada.'
+other = 'Puedes cambiar la información asociada a tu entrada (como tu nombre, o tu talla de camiseta) desde la página de tu entrada, hasta un mes antes del evento. Para transferir tu entrada a otra persona, <a href="mailto:info@commit-conf.com" target="_blank">ponte en contacto</a> indicando el usuario de Koliseo del nuevo propietario de la entrada.'
 [TicketInvoice]
 other = 'Necesito factura de mi entrada'
 [TicketInvoiceCreation]
-other = 'Si necesitas factura de tu entrada sólo tienes que utilizar el botón <code>Crear factura</code> que aparece en la página de tu entrada en <a target="_blank" href="https://www.koliseo.com">Koliseo</a>, indicando tus datos de facturación.'
-[TicketInvoiceLimit]
-other = 'Tendrás de plazo hasta 30 días después de la fecha del evento para poder generarla de forma automática.'
+other = 'Puedes crear tu factura haciendo clic en el botón "Crear factura" que aparece en tu entrada en <a target="_blank" href="https://www.koliseo.com">Koliseo</a>. Puedes generar tu factura hasta 30 días después del evento.'
 [Refund]
-other = 'Se me hace imposible asistir. ¿Puedo devolver mi entrada?'
+other = 'Me será imposible asistir. ¿Puedo devolver mi entrada?'
 [RefundDesc]
-other = 'La entrada <b>no se puede devolver en ningún caso</b>, pero puedes cederla a otra persona.'
+other = 'La entrada no se puede devolver en ningún caso, pero puedes cederla a otra persona.'
 [CannotFindTicket]
 other = 'No consigo encontrar mi entrada en Koliseo.'
 [CannotFindTicketDesc]
-other = 'Esto sucede al abrir sesión con una cuenta de un proveedor diferente a la que se usó al comprar la entrada (por ejemplo, comprar con una cuenta de Google y acceder después con cuenta de Facebook). Para Koliseo se trata de dos cuentas distintas aunque compartan el mismo e-mail.'
+other = 'Esto puede suceder al abrir sesión con una cuenta de un proveedor diferente a la que se usó al comprar la entrada (por ejemplo, comprar con una cuenta de Google y acceder después con cuenta de Facebook). Para Koliseo se trata de dos cuentas distintas aunque compartan el mismo e-mail.'
 [StudentOrUnemployedRequirements]
-other = 'Soy estudiante o desempleado. ¿Tengo algún descuento? ¿Qué requisitos necesito?'
+other = '¿Hay algún descuento para estudiantes o asistentes en búsqueda de empleo?'
 [StudentOrUnemployedIntro]
-other = 'Si estás sin empleo o eres estudiante universitario, de FP o equivalente, puedes comprar una entrada de "Estudiante/Desempleado" a precio reducido.'
-[WillNeedToShow]
-other = 'El día del evento tendrás que enseñar en el control de acceso:'
+other = 'Si estás sin empleo o eres estudiante universitario, de FP o equivalente, puedes comprar una entrada de "Estudiante/Desempleado" a precio reducido. El día del evento tendrás que enseñar:'
 [StudentRequirements]
-other = 'Si eres estudiante: un carnet u otro documento que acredite que lo eres. Si ya no serás estudiante para la fecha del evento, es suficiente que nos enseñes tu carnet del año académico anterior.'
+other = 'Estudiante: un carnet u otro documento que acredite que lo eres en ese momento o cuando adquiriste la entrada.'
 [UnemployedRequirements]
-other = 'Si estás sin trabajo: un documento del INEM donde consta que estabas dado de alta como demandante de empleo a la fecha de la compra de tu entrada'
-[LimitedTickets]
-other = 'Hay un número limitado de este tipo de entradas.'
+other = 'Desempleado: un documento del INEM donde consta que estabas dado de alta como demandante de empleo a la fecha de la compra de tu entrada'
 [TransferRequirements]
-other = '<b>Si finalmente no puedes asistir y vas a ceder tu entrada a otra persona, ésta tendrá que cumplir los mismos requisitos.</b>'
+other = 'Si transfieres tu entrada a otra persona, el nuevo asistente deberá cumplir los mismos requisitos.</b>'
 [WorkshopsRequireRegistration]
-other = '¿Necesito inscribirme a las charlas para poder asistir?'
+other = '¿Necesito inscribirme para poder asistir a una sesión?'
 [TicketsAllowsToAttendAnyTalk]
-other = 'No es necesario inscribirse a las charlas. Tu entrada te permite asistir a cualquier charla o taller. A pesar de distribuir de la mejor forma posible las charlas en las aulas, algunas se llenarán más que otras y podrías no encontrar sitio en la charla que querías ver.'
+other = 'No es necesario inscribirse para asistir a una charla o taller en particular. Tu entrada te permite asistir a cualquier sesión, y las plazas disponibles se ocuparán en orden de llegada. Ponemos esfuerzo para distribuir las charlas entre las salas disponibles, aunque algunas se llenarán más que otras y podrías no encontrar sitio en la sesión en concreto a la que querías asistir.'
 [HelpUsWithTalkLikes]
-other = 'Para ayudarnos a saber las charlas que van a tener más audiencia, <b>puedes indicar en la página de la agenda a qué charlas querrías asistir</b>. Asignaremos las charlas más votadas a las salas más grandes. <a href="https://twitter.com/commitconf/status/1044880810069938176" target="_blank">Aquí</a> tienes un tweet explicando cómo puedes ayudarnos.'
+other = 'Para ayudarnos a estimar el interés de cada sesión, puedes marcar en la agenda las charlas a las que piensas asistir. <a href="https://twitter.com/commitconf/status/1044880810069938176" target="_blank">Este tweet explica el proceso</a>.'
 [IsMealIncluded]
-other = '¿La comida está incluida o tendré que llevarla?'
+other = '¿Está incluida la comida?'
 [MealIsIncluded]
-other = 'En el precio de la entrada están incluidos los cafés, las comidas y el aperitivo del viernes. Cuando compres tu entrada, <b>especifica si tienes alguna preferencia de comida o necesidad especial</b> (dispondremos de menús vegetarianos, veganos o sin gluten).'
-[MealAlternative]
-other = 'Al ser más de dos mil personas, las posibilidades de customización son limitadas. La comida será principalmente constituida por sandwiches, frutas y chocolatinas ambos días. Como alternativa existe la posibilidad de usar a la cafetería de la universidad o traerte tu comida desde casa.'
+other = 'En la entrada están incluidos los cafés, la comida y el aperitivo del viernes. Puedes especificar si tienes alguna restricción alimentaria (vegetariano, vegano, celíaco) durante el proceso de compra de tu entrada. Como alternativa puedes usar a la cafetería de la universidad o traerte tu comida de casa.'
 
 # Sponsors
 [OurSponsors]
@@ -271,9 +253,9 @@ other = 'suscriptores en YouTube'
 [Edition]
 other = 'Edición'
 [AttendeesExperience]
-other = 'Experiencia de los asistentes'
+other = 'Experiencia del asistente'
 [AttendeesJobRoles]
-other = 'Perfil profesional de los asistentes'
+other = 'Perfil profesional del asistente'
 [years]
 other = 'años'
 [Students]
@@ -410,3 +392,5 @@ other = 'Código de conducta'
 other = 'Términos y condiciones'
 [TheTeam]
 other = 'El equipo'
+[2019Edition]
+other = 'Edición 2019'
