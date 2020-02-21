@@ -19,12 +19,12 @@
         {{ if (or $.Site.Params.AgendaLink $.Site.Params.C4PLink) }}
           {{ $ticketsButtonClass = "" }}
           {{ if $.Site.Params.AgendaLink }}
-            <a class="button primary" href="{{$.Site.Params.AgendaLink}}" target="_blank">
+            <a class="button small primary" href="{{$.Site.Params.AgendaLink}}" target="_blank">
               Agenda
               <span class="button-small">{{ i18n "VisitOurAgenda" }}</span>
             </a>
           {{ else }}
-            <a class="button primary" href="{{$.Site.Params.C4PLink}}" target="_blank">
+            <a class="button small primary" href="{{$.Site.Params.C4PLink}}" target="_blank">
               Call for papers
               <span class="button-small">{{ or $.Site.Params.C4PButtonTextKey "SendYourTalk" | i18n }}</span>
             </a>
