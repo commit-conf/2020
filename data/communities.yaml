@@ -18,6 +18,10 @@
   href: https://www.meetup.com/es-ES/CATzure/
 - name: CrossDevelopment-Madrid
   href: http://www.xdevmadrid.es/
+- name: CrossDvlup Madrid
+  href: https://www.meetup.com/CrossDvlup
+  logo:
+    file: CrossDvlup.jpg
 - name: Docker Madrid
   href: https://www.meetup.com/es-ES/Docker-Madrid/
 - name: dotnetMalaga
