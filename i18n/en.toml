@@ -32,6 +32,10 @@ other = 'Go to our YouTube channel'
 other = 'We will soon announce the dates for Commit 2021.'
 [AgendaAnnouncement]
 other = 'We expect to publish the agenda in mid-June.'
+[CovidAnnouncement]
+other = 'The event has been postponed. <a href="/docs/postponed-event-statement.pdf" target="_blank">Read our statement</a>.'
+[PostponedEventNewDates]
+other = 'We will communicate the tickets sale date from September 2020.'
 [Attendees]
 other = 'Attendees'
 [Communities]
@@ -39,7 +43,7 @@ other = 'Communities'
 [Talks]
 other = 'Talks'
 [BeHereDesc]
-other = '<h1>The recording is not the same</h1><p class="highlight">Make a list of the recorded talks "to watch over the weekend", or "one talk a day, during lunch." Totally. As soon as you make time.</p><p>Commit is not only an event with 140 talks — it&apos;s about meeting new people with similar interests, talking to the speaker after the talk, or finding out what the companies leading in IT are all about. If you stay at home, you miss the possibility of <a href="https://blog.commit-conf.com/un-commit-cualquiera/">creating your own memories</a>. <b>It&apos;s not just about attending an event, but about living the experience</b>.<p itemprop="description">Commit is a conference that explores all aspects of IT development with Spanish speakers, from software development techniques to Big Data, Cloud, or ML. It will happen at CEU San Pablo University, Montepríncipe Campus, in Madrid on November 27-28.</p>'
+other = '<h1>The recording is not the same</h1><p class="highlight">Make a list of the recorded talks "to watch over the weekend", or "one talk a day, during lunch." Totally. As soon as you make time.</p><p>Commit is not only an event with 140 talks — it&apos;s about meeting new people with similar interests, talking to the speaker after the talk, or finding out what the companies leading in IT are all about. If you stay at home, you miss the possibility of <a href="https://blog.commit-conf.com/un-commit-cualquiera/">creating your own memories</a>. <b>It&apos;s not just about attending an event, but about living the experience</b>.<p itemprop="description">Commit is a conference that explores all aspects of IT development with Spanish speakers, from software development techniques to Big Data, Cloud, or ML.</p>'
 [WorkDoesNotDiscriminate]
 other = 'Our commitment to diversity'
 [WorkDoesNotDiscriminateDesc]
@@ -121,7 +125,7 @@ other = 'You can use public transport, taxi, car, or any of the free shuttles th
 [FreeShuttles]
 other = 'Free shuttles'
 [FreeShuttlesDesc]
-other = 'We provide a free shuttle service connecting to Plaza de España that takes 20 minutes for a one-way trip. We have adjusted the schedule according to our experience, but we cannot guarantee seats for everyone. We will publish the timetable <a href="https://blog.commit-conf.com" target="_blank">on our blog</a> in October.'
+other = 'We provide a free shuttle service connecting to Plaza de España that takes 20 minutes for a one-way trip. We have adjusted the schedule according to our experience, but we cannot guarantee seats for everyone. We will publish the timetable <a href="https://blog.commit-conf.com" target="_blank">on our blog</a> when event dates get closer.'
 [Registration]
 other = 'Registration'
 [Badges]

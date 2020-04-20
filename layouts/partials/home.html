@@ -13,53 +13,60 @@
       </h1>
       <meta itemprop="startDate" content="2020-11-27T08:00">
       <meta itemprop="endDate" content="2020-11-28T18:30">
-      <p class="hero-body">Madrid, 27-28 Nov</p>
+      <meta itemprop="eventStatus" content="EventPostponed">
+      <p class="hero-body {{ if $.Site.Params.PostponedAnnouncementKey }}line-through{{end}}">Madrid, 27-28 Nov</p>
       <div class="hero-actions">
-        {{ $ticketsButtonClass := "primary" }}
-        {{ if (or $.Site.Params.AgendaLink $.Site.Params.C4PLink) }}
-          {{ $ticketsButtonClass = "" }}
-          {{ if $.Site.Params.AgendaLink }}
-            <a class="button small primary" href="{{$.Site.Params.AgendaLink}}" target="_blank">
-              Agenda
-              <span class="button-small">{{ i18n "VisitOurAgenda" }}</span>
-            </a>
-          {{ else }}
-            <a class="button small primary" href="{{$.Site.Params.C4PLink}}" target="_blank">
-              Call for papers
-              <span class="button-small">{{ or $.Site.Params.C4PButtonTextKey "SendYourTalk" | i18n }}</span>
-            </a>
-          {{ end }}
-        {{ end }}
-        {{ if (or $.Site.Params.VideoLink $.Site.Params.PhotosLink) }}
-          {{ if $.Site.Params.VideoLink }}
-          <a class="button small" href="{{$.Site.Params.VideoLink}}" target="_blank">
-            {{ i18n "SummaryVideo" }}
-            <span class="button-small">{{ i18n "ViewSummaryVideo" }}</span>
-          </a>
-          {{ end }}
-          {{ if $.Site.Params.PhotosLink }}
-          <a class="button small" href="{{$.Site.Params.PhotosLink}}" target="_blank">
-            {{ i18n "ThePhotos" }}
-            <span class="button-small">{{ i18n "ViewEventPhotos" }}</span>
-          </a>
-          {{ end }}
+        {{ if $.Site.Params.PostponedAnnouncementKey }}
+          <div class="message" role="alert">
+            {{ i18n $.Site.Params.PostponedAnnouncementKey | safeHTML }}
+          </div>
         {{ else }}
-          <a class="button small {{$ticketsButtonClass}}" href="https://www.koliseo.com/events/commit2020" target="_blank">
-            {{ i18n "Tickets" }}
-            <span class="button-small">{{ i18n "TicketsStartDate" }}</span>
+          {{ $ticketsButtonClass := "primary" }}
+          {{ if (or $.Site.Params.AgendaLink $.Site.Params.C4PLink) }}
+            {{ $ticketsButtonClass = "" }}
+            {{ if $.Site.Params.AgendaLink }}
+              <a class="button small primary" href="{{$.Site.Params.AgendaLink}}" target="_blank">
+                Agenda
+                <span class="button-small">{{ i18n "VisitOurAgenda" }}</span>
+              </a>
+            {{ else }}
+              <a class="button small primary" href="{{$.Site.Params.C4PLink}}" target="_blank">
+                Call for papers
+                <span class="button-small">{{ or $.Site.Params.C4PButtonTextKey "SendYourTalk" | i18n }}</span>
+              </a>
+            {{ end }}
+          {{ end }}
+          {{ if (or $.Site.Params.VideoLink $.Site.Params.PhotosLink) }}
+            {{ if $.Site.Params.VideoLink }}
+            <a class="button small" href="{{$.Site.Params.VideoLink}}" target="_blank">
+              {{ i18n "SummaryVideo" }}
+              <span class="button-small">{{ i18n "ViewSummaryVideo" }}</span>
+            </a>
+            {{ end }}
+            {{ if $.Site.Params.PhotosLink }}
+            <a class="button small" href="{{$.Site.Params.PhotosLink}}" target="_blank">
+              {{ i18n "ThePhotos" }}
+              <span class="button-small">{{ i18n "ViewEventPhotos" }}</span>
+            </a>
+            {{ end }}
+          {{ else }}
+            <a class="button small {{$ticketsButtonClass}}" href="https://www.koliseo.com/events/commit2020" target="_blank">
+              {{ i18n "Tickets" }}
+              <span class="button-small">{{ i18n "TicketsStartDate" }}</span>
+            </a>
+          {{ end }}
+          {{ if $.Site.Params.C4VLink }}
+          <a class="button small" href="/call-for-volunteers" target="_blank">
+            Call for volunteers
+            <span class="button-small">{{ i18n "BeAVolunteer" }}</span>
           </a>
-        {{ end }}
-        {{ if $.Site.Params.C4VLink }}
-        <a class="button small" href="/call-for-volunteers" target="_blank">
-          Call for volunteers
-          <span class="button-small">{{ i18n "BeAVolunteer" }}</span>
-        </a>
-        {{ end }}
-        {{ if $.Site.Params.StreamingLink }}
-        <a class="button small" href="{{$.Site.Params.StreamingLink}}" target="_blank">
-          {{ i18n "Streaming" }}
-          <span class="button-small">{{ i18n "GoToTheYoutubeChannel" }}</span>
-        </a>
+          {{ end }}
+          {{ if $.Site.Params.StreamingLink }}
+          <a class="button small" href="{{$.Site.Params.StreamingLink}}" target="_blank">
+            {{ i18n "Streaming" }}
+            <span class="button-small">{{ i18n "GoToTheYoutubeChannel" }}</span>
+          </a>
+          {{ end }}
         {{ end }}
       </div>
     </div>

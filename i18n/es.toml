@@ -32,6 +32,10 @@ other = 'Ir a nuestro canal de Youtube'
 other = 'En breve publicaremos las fechas de Commit 2021.'
 [AgendaAnnouncement]
 other = 'Esperamos publicar la agenda a mediados de junio.'
+[CovidAnnouncement]
+other = 'El evento se ha aplazado. <a href="/docs/comunicado-aplazamiento.pdf" target="_blank">Lee el comunicado</a>.'
+[PostponedEventNewDates]
+other = 'Comunicaremos la fecha de venta de entradas a partir de septiembre 2020.'
 [Attendees]
 other = 'Asistentes'
 [Communities]
@@ -39,7 +43,7 @@ other = 'Comunidades'
 [Talks]
 other = 'Charlas'
 [BeHereDesc]
-other = '<h1>No se vive igual en vídeo</h1><p class="highlight">Apuntarte la lista de charlas grabadas y "el próximo fin de semana las veo", o "una charla al día, durante el almuerzo". Totalmente. En cuanto saques tiempo.</p><p>Commit no es sólo un evento de 140 charlas — es conocer gente nueva con intereses similares, es hablar con el ponente tras la charla, es enterarse de lo que buscan las empresas punteras del país. Si te quedas en casa te pierdes la posibilidad de <a href="https://blog.commit-conf.com/un-commit-cualquiera/">crear tus propios recuerdos</a>. <b>No se trata sólo de asistir a un evento; se trata de vivir la experiencia</b>.</p><p itemprop="description">Commit es una conferencia con ponentes españoles que incluye todos los aspectos del desarrollo IT, desde técnicas de desarrollo de software hasta Big Data, Cloud o ML. Se celebrará en la Universidad CEU San Pablo, Campus de Montepríncipe, en Madrid, el 27-28 de noviembre.</p>'
+other = '<h1>No se vive igual en vídeo</h1><p class="highlight">Apuntarte la lista de charlas grabadas y "el próximo fin de semana las veo", o "una charla al día, durante el almuerzo". Totalmente. En cuanto saques tiempo.</p><p>Commit no es sólo un evento de 140 charlas — es conocer gente nueva con intereses similares, es hablar con el ponente tras la charla, es enterarse de lo que buscan las empresas punteras del país. Si te quedas en casa te pierdes la posibilidad de <a href="https://blog.commit-conf.com/un-commit-cualquiera/">crear tus propios recuerdos</a>. <b>No se trata sólo de asistir a un evento; se trata de vivir la experiencia</b>.</p><p itemprop="description">Commit es una conferencia con ponentes españoles que incluye todos los aspectos del desarrollo IT, desde técnicas de desarrollo de software hasta Big Data, Cloud o ML.</p>'
 [WorkDoesNotDiscriminate]
 other = 'Nuestro compromiso con la diversidad'
 [WorkDoesNotDiscriminateDesc]
@@ -121,7 +125,7 @@ other = 'Puedes llegar en transporte público, taxi, coche o uno de los shuttles
 [FreeShuttles]
 other = 'Shuttles gratuitos'
 [FreeShuttlesDesc]
-other = 'Ponemos disponibles unos autobuses gratuitos conectando con Plaza de España que tardan unos 20 minutos por trayecto. Hemos ajustado el horario de acuerdo a nuestra experiencia, pero no podemos garantizar asientos para todo el mundo. Publicaremos el horario <a href="https://blog.commit-conf.com" target="_blank">en nuestro blog</a> en octubre.'
+other = 'Ponemos disponibles unos autobuses gratuitos conectando con Plaza de España que tardan unos 20 minutos por trayecto. Hemos ajustado el horario de acuerdo a nuestra experiencia, pero no podemos garantizar asientos para todo el mundo. Publicaremos el horario <a href="https://blog.commit-conf.com" target="_blank">en nuestro blog</a> cuando se acerquen las fechas del evento.'
 [Registration]
 other = 'Registro'
 [Badges]

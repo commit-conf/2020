@@ -140,4 +140,27 @@ $hero-color: $black;
     font-family: $sansFontFamily;
     font-size: $font-size-xl;
   }
+  .message {
+    font-size: $font-size-xl;
+    text-transform: none;
+    display: inline-block;
+    background-color: rgba($color-yellow-800, .7);
+    > a {
+      color: $color-blue-300;
+      &:hover, &:focus {
+        background-color: $color-blue-100;
+        color: $color-blue-900;
+      }
+    }
+    @include medium {
+      background-color: rgba($color-yellow-500, .3);
+      > a {
+        color: $color-blue-800;
+        &:hover, &:focus {
+          background-color: $color-blue-100;
+          color: $color-blue-900;
+        }
+      }
+    }
+  }
 }

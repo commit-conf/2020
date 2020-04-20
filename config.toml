@@ -46,3 +46,6 @@ Title = 'Commit Conf 2020'
   # Warning: Once a key is specified, it will be published
   # Prefilled entries are "AgendaAnnouncement" and "NewDatesAnnouncement"
   AnnouncementKey = ""
+  # Optional. If the event is postponed, specify a i18n entry here with the message to display.
+  # We will hide all buttons from home
+  PostponedAnnouncementKey = "CovidAnnouncement"
