@@ -11,7 +11,7 @@ other = 'Sponsors'
 
 # Home
 [TicketsStartDate]
-other = 'Available from april 15th'
+other = 'On-sale dates TBD'
 [SendYourTalk]
 other = 'Send your talk'
 [VisitOurAgenda]
@@ -163,7 +163,7 @@ other = 'We have supervised storage for your coat, helmet, or suitcase. However,
 [Info]
 other = 'Information'
 [TicketsDesc]
-other = 'Ticket sales begin on April 15. The same ticket is valid for both days of the event.'
+other = 'Tickets sale dates TBD'
 [BuyTickets]
 other = 'Get your ticket'
 [BuyTicketAtTheVenue]

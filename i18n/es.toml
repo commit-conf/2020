@@ -11,7 +11,7 @@ other = 'Patrocinadores'
 
 # Home
 [TicketsStartDate]
-other = 'A la venta el 15 de abril'
+other = 'Fecha de venta de entradas TBD'
 [SendYourTalk]
 other = 'Envía tu charla'
 [VisitOurAgenda]
@@ -163,7 +163,7 @@ other = 'Disponemos de guardarropa vigilado para tu abrigo, casco o maleta. Sin 
 [Info]
 other = 'Información'
 [TicketsDesc]
-other = 'La venta de entradas comienza el 15 de abril. La misma entrada vale para los dos días del evento.'
+other = 'La fecha de venta de entradas se comunicará próximamente.'
 [BuyTickets]
 other = 'Consigue tu entrada'
 [BuyTicketAtTheVenue]
