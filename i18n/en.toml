@@ -33,7 +33,7 @@ other = 'We will soon announce the dates for Commit 2021.'
 [AgendaAnnouncement]
 other = 'We expect to publish the agenda in mid-June.'
 [CovidAnnouncement]
-other = 'The event has been postponed. <a href="/docs/postponed-event-statement.pdf" target="_blank">Read our statement</a>.'
+other = 'The event <a href="/docs/postponed-event-statement.pdf" target="_blank">has been postponed</a>.<br/>Tentative date: 16-17 April 2021.'
 [PostponedEventNewDates]
 other = 'We will communicate the tickets sale date from September 2020.'
 [Attendees]
